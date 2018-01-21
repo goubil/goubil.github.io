@@ -31,8 +31,8 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color:  {
-    background-color: rgba(18, 15, 111, 0.88);
+   {
+    background-color: rgba(6, 4, 60, 0.88);
 }
 
 div {
@@ -57,5 +57,6 @@ header img {
 footer {
     font-size: /* big */;
     background-color: rgba(18, 16, 75, 0.88); 
-    color: aliceblue; text-align: center;
+    color: aliceblue; text-align: center; text-decoration: white; color: white;}
+    
 }
