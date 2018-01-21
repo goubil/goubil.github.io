@@ -2,10 +2,10 @@
 /* You may use #HEX or color names */
 
 /* * is a wildcard referring to all elements. */
-* { margin: 0; box-sizing: border-box; } 
+* { margin: 10; box-sizing: border-box; } 
 
 body { 
-    font-size: 16px; 
+    font-size: 18px; 
     line-height: 32px;
     font-family: /* Ubuntu, sans-serif */;
     color: /* #xxxxxx */;
@@ -13,41 +13,41 @@ body {
 
 h1 {
     font-size: /* 2.3rem  (rem is a unit of measure) */;
-    color: /* #xxxxxx */;
+    color: /* #xxxxxx */ ; text-align: center;
 }
 
 h2 {
     font-size: /* x.xrem */;
     text-align: center;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 5px solid rgba(187, 187, 187, 0.88);
 }
 
 header, main, footer {
     margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: /* xxxpx (px = pixel is a unit of measure)  */;
+    padding: .8rem;
+    max-width: /* 5px (px = pixel is a unit of measure)  */;
 }
 
 header, footer, footer a {
     text-align: center;
-    background-color: h1 {
-    background-color: green;
+    background-color:  {
+    background-color: rgba(206, 56, 56, 0.88);
 }
 
 div {
-    background-color: lightblue;
+    background-color: #1faddb;
 }
 
 p {
     
-    background:background: #95A3B0 none no-repeat scroll 15px -50px no-repeat ;
+    background:background: rgba(40, 113, 181, 0.88) none repeat scroll 15px -50px repeat ;
     background-size: 50px, 130px, auto;
 
 }
-    color: whitesmoke;
+    color: rgba(58, 55, 152, 0.87);
 }
 
-header img {
+header img { 
     width: /*  */;
     height: auto;
     float: right;
