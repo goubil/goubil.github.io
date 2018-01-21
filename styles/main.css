@@ -2,18 +2,19 @@
 /* You may use #HEX or color names */
 
 /* * is a wildcard referring to all elements. */
-* { margin: 10; box-sizing: border-box; } 
+* { margin: 16; box-sizing: border-box; } 
 
 body { 
     font-size: 18px; 
-    line-height: 32px;
+    line-height: 60px;
     font-family: /* Ubuntu, sans-serif */;
-    color: /* #xxxxxx */;
+   ;
 }
 
 h1 {
-    font-size: /* 2.3rem  (rem is a unit of measure) */;
-    color: /* #xxxxxx */ ; text-align: center;
+    font-size: /* 2.3rem */;
+    color: aliceblue; text-align: center;
+    background-color: rgba(18, 16, 75, 0.88); 
 }
 
 h2 {
@@ -31,7 +32,7 @@ header, main, footer {
 header, footer, footer a {
     text-align: center;
     background-color:  {
-    background-color: rgba(206, 56, 56, 0.88);
+    background-color: rgba(18, 15, 111, 0.88);
 }
 
 div {
@@ -54,5 +55,7 @@ header img {
 }
 
 footer {
-    font-size: /* smaller */;
+    font-size: /* big */;
+    background-color: rgba(18, 16, 75, 0.88); 
+    color: aliceblue; text-align: center;
 }
