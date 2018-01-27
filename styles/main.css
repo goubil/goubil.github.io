@@ -1,33 +1,59 @@
-* {
-box-sizing : border-box;
-}
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+* { margin: 0; box-sizing: border-box; }
+
 body {
-font-size : 18px;
-line-height : 60px;
+    font-size: 16px;
+    line-height: 32px;
+    font-family:serif /* Ubuntu, sans-serif */;
+    color:#082929;
 }
+
 h1 {
-color : aliceblue;
-text-align : center;
-background-color : rgba(18, 16, 75, 0.88);
+    font-size: 45px/* x.xrem  (rem is a unit of measure) */;
+    color:#fad7f2 /* #xxxxxx */;
 }
+
 h2 {
-text-align : center;
-border-bottom : 5px solid rgba(187, 187, 187, 0.88);
+    font-size: 30px/* x.xrem */;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
 }
+
 header, main, footer {
-margin : 1.25rem auto;
-padding : 0.8rem;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 870px/* xxxpx (px = pixel is a unit of measure)  */;
 }
-div {
-background-color : #1faddb;
+
+header, footer, footer a {
+    text-align: center;
+    background-color:#162e4a /* */;
+    color: whitesmoke;
 }
-p {
-background-size : 50px, 130px, auto;
+
+header img {
+    width: 400/*  */;
+    height: auto;
+    float: right;
 }
+
+nav {
+    display: block;
+    text-align: center;
+}
+
 footer {
-background-color : rgba(18, 16, 75, 0.88);
-color : aliceblue;
-text-align : center;
-text-decoration : white;
-color : white;
+    font-size: 13px/* smaller */;
 }
+
+.style1 {
+    margin: 0 auto;
+    border: 1px solid #bbb;
+    padding: 5px;
+    background-color: #eee;
+    line-height: 1.5em;
+}
+</style>
