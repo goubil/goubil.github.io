@@ -21,24 +21,57 @@
 <!-- large/wide/desktop views -->
 </head>
 <body>
+	
 <header> <img src="images/sunydaylogo.png" alt="A sunny day."> </header>
-<h1>How is it ?</h1>
+<h1>How is your day going ?</h1>
 <div class="subheading">The Accurate weather is withi you ...
-<!-- site navigation use placeholder references --> <nav> <button
- onclick="toggleNavMenu()">☰</button> </nav>
-<ul>
-  <li><a href="#">Home</a></li>
-  <li class="active"><a href="#">Franklin</a></li>
-  <li><a href="#">Greenville</a></li>
-  <li><a href="#">Springfield</a></li>
-  <li><a href="#">Storm Center</a></li>
-  <li><a href="#">Gallery</a></li>
-	</ul> </div>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-	<main>
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="#home">Home</a>
+  <a class="active" href="#Franklin">Franklin</a>
+  <a href="#Greenville">Greenville</a>
+  <a href="#Springfield">Springfield</a>
+	<a href="#Storm Center">STorm Center</a>
+	<a href="#Gallery">Gallery</a>
+</div>
+</body>
+<main>
 		<!--<h3 class="current">Current Weather</h3>-->
 		<figure>
-			<img src="images/sunnyday.jpg" alt="A sunny landscape">
+			<img src="images/sunnyday.jpg" alt="A sunny day">
 		</figure>
 		<section>
 			<h2>The City of Franklin</h2>
@@ -108,7 +141,5 @@
 		</aside>
 		<p class="footer-bar">&copy;2017 All Rights Reserved | How is it ? | <span id="currentdate">Current Date Placeholder</span></p>
 	</footer>
-
-
-</body>
+</div></body>
 </html>
