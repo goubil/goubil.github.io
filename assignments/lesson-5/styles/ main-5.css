@@ -32,8 +32,8 @@ nav { clear: left; }
 nav button { float: right; }
 nav ul {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
+	margin: 2;
+	padding: 2;
 	width: 135px;
 	background-color: #00008B;
 }
