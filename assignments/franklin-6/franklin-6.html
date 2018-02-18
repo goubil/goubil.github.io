@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin City ((Weather and city information)</title>
+    <meta name="author" content="Hassan Goubil">
+    <meta name="description" content="The Franklin weather site is a HTML and CSS CIT 230 project at BYU-Idaho.">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-5.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium-5.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large-5.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head> 
+	
+        <header> <img src="images/sunydaylogo.png" alt="A sunny day."><span style="font-family: Kaiti TC Regular;">Weather Or Not ...&nbsp;</span></header>
+  
+   <div class="subheading">The best weather is within you...</div>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+<body>
+<div class="topnav">
+  <a href="#home">Home</a>
+  <a class="active" href="#Franklin">Franklin</a>
+  <a href="#Greenville">Greenville</a>
+  <a href="#Springfield">Springfield</a>
+	<a href="#Storm Center">STorm Center</a>
+	<a href="#Gallery">Gallery</a>
+	</div>
+</body>
+<main>
+		<!--<h3 class="current">Current Weather</h3>-->
+		<figure>
+			<img src="images/franklin-medium.jpg" alt="franklin-medium">
+		</figure>
+		<section>
+			<h2>The City of Franklin</h2>
+			<div class="highlow">
+				<p>High: 89&deg;F</p>  
+				<p>Low: 79&deg;F</p>  
+			</div>
+			<div class="current">
+				<p>Sunny</p>
+				<picture>
+					<img src="images/sunydaylogo1.png" alt="A simple sun image">
+				</picture>
+			</div>   
+			<div class="conditions">
+				<p>Precipitation: 4%</p>  
+				<p>Wind Speed: 10 km/h</p>  
+			</div>           
+		</section>
+
+		<section class="forecast">
+			<h3>10 Day Forecast</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Day 1</th>
+						<th>Day 2</th>
+						<th>Day 3</th>
+						<th>Day 4</th>
+						<th>Day 5</th>
+						<th>Day 6</th>
+						<th>Day 7</th>
+						<th>Day 8</th>
+						<th>Day 9</th>
+						<th>Day 10</th>
+					</tr>
+				</thead>
+				<tbody>  
+					<tr>
+						<td>80&deg;F</td>
+						<td>87&deg;F</td>
+						<td>78&deg;F</td>
+						<td>75&deg;F</td>
+						<td>72&deg;F</td>
+						<td>72&deg;F</td>
+						<td>79&deg;F</td>
+						<td>80&deg;F</td>
+						<td>85&deg;F</td>
+						<td>82&deg;F</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<article>
+			<h3>Franklin Breaks Record</h3>	
+			<p class="town-article">
+				<img src="images/sunnyweather.jpg" alt="A man in a very host shore looking to the west" >
+				Frankling has experienced a high temperature in the last two weeks, according to our NGOW (National Goverment Office of Weather).
+			</p>
+		</article>		  
+
+	</main>
+<body>
+<footer>
+            Tri-Metro Weather | 300 West Avenue | Some Town, CA | 555-555-555<br>
+            Copyright &copy;2017 | <a href="#">Terms of Use</a> | <div id="currentDate"></div>
+        </footer>
+    <script type="text/javascript" src="scripts/currentDate.js"></script>
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
+    </body>
+	</html>
