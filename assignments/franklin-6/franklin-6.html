@@ -1,22 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Franklin City ((Weather and city information)</title>
-    <meta name="author" content="Hassan Goubil">
-    <meta name="description" content="The Franklin weather site is a HTML and CSS CIT 230 project at BYU-Idaho.">
-    <!-- external style references in the proper cascading order -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!-- Google API font reference -->
-    <link href="styles/normalize.css" rel="stylesheet">
-    <!-- normalize useragent/browser defaults -->
-    <link href="styles/main-5.css" rel="stylesheet">
-    <!-- default styles - small/phone views -->
-    <link href="styles/medium-5.css" rel="stylesheet">
-    <!-- medium/tablet views -->
-    <link href="styles/large-5.css" rel="stylesheet">
-    <!-- large/wide/desktop views -->
+     <meta charset="utf-8">
+        <title>Franklin Weather</title>
+        <meta name="description" content="Franklin local weather page">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" media="(max-width: 735px)" href="styles/main-5.css">
+        <link rel="stylesheet" media="(min-width: 736px)" href="styles/medium-5.css">
+        <link rel="stylesheet" media="(min-width: 1440px)" href="styles/large-5.css">
 </head> 
         <header> <img src="images/sunydaylogo.png" alt="A sunny day."><span style="font-family: Kaiti TC Regular;">Weather Or Not ...&nbsp;</span></header>
    <div class="subheading">The best weather is within you...</div>
@@ -58,27 +51,16 @@ body {
 	</div>
 </body>
 <main>
-		<!--<h3 class="current">Current Weather</h3>-->
-		<figure>
-			<img src="images/franklin-medium.jpg" alt="franklin-medium">
-		</figure>
-		<section>
-			<h2>The City of Franklin</h2>
-			<div class="highlow">
-				<p>High: 89&deg;F</p>  
-				<p>Low: 79&deg;F</p>  
-			</div>
-			<div class="current">
-				<p>Sunny</p>
-				<picture>
-					<img src="images/sunydaylogo1.png" alt="A simple sun image">
-				</picture>
-			</div>   
+		 <picture>
+                <source media="(max-width: 860px)" srcset="images/small/franklin-small.jpg">
+                <source media="(max-width: 1439px)" srcset="images/medium/franklin-medium.jpg">
+                <source media="(min-width: 1440px)" srcset="images/large/franklin-large.jpg">
+                <img src="images/franklin.jpg" alt="">
+            </picture>   
 			<div class="conditions">
 				<p>Precipitation: 4%</p>  
 				<p>Wind Speed: 10 km/h</p>  
 			</div>           
-		</section>
 		<section class="forecast">
 			<h3>10 Day Forecast</h3>
 			<table>
