@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+        <title>Franklin Weather</title>
+        <meta name="description" content="Franklin local weather page">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" media="(max-width: 735px)" href="styles/main-5.css">
+        <link rel="stylesheet" media="(min-width: 736px)" href="styles/medium-5.css">
+        <link rel="stylesheet" media="(min-width: 1440px)" href="styles/large-5.css"></head> 
+	<img src="images/sunydaylogo.png" alt="A sunny day."><span style="font-family: Kaiti TC Regular;">Weather Or Not  ... The best weather is within you&nbsp;</span>
+	<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+<div class="topnav">
+  <a href="#home">Home</a>
+  <a class="active" href="#Franklin">Franklin</a>
+  <a href="#Greenville">Greenville</a>
+  <a href="#Springfield">Springfield</a>
+	<a href="#StormCenter">STorm Center</a>
+	<a href="gallery-7.html">Gallery</a>
+	</div>
+<main>
+		 <picture>
+                <source media="(max-width: 860px)" srcset="images/small/franklin-small.jpg">
+                <source media="(max-width: 1439px)" srcset="images/medium/franklin-medium.jpg">
+                <source media="(min-width: 1440px)" srcset="images/large/franklin-large.jpeg">
+                <img src="images/medium/franklin-medium.jpg" alt="">
+            </picture>   
+			 <div class="mainForecast">
+                <table>
+                    <tr>
+                        <th colspan="2">Franklin Weather</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Summary</strong></td>
+                        <td id="summary">Sunny</td>
+                    </tr>
+                    <tr>
+                        <td><strong>High</strong></td>
+                        <td id="high">89&deg;F</td>                    
+                    </tr>
+                    <tr>
+                        <td><strong>Low</strong></td>
+                        <td id="low">66&deg;F</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Precipitation</strong></td>
+                        <td id="precipitation">0%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Max Wind</strong></td>
+                        <td id="wind">5 mph SW</td>
+                    </tr>
+                </table>
+            </div>  
+			<div class="tenDayForecast">
+                 <table>
+                    <tr>
+                        <th colspan="10">10 Day Forecast</th>
+                    </tr>
+                    <tr id="day">
+                        <td>Day 1</td>
+                        <td>Day 2</td>
+                        <td>Day 3</td>
+                        <td>Day 4</td>
+                        <td>Day 5</td>
+                        <td>Day 6</td>
+                        <td>Day 7</td>
+                        <td>Day 8</td>
+                        <td>Day 9</td>
+                        <td>Day 10</td>
+                    </tr>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </table>
+	</div>
+<footer>
+            Weather Or Not | 235 Culumbos Road | FRANKLIN, TN | 468 456 567<br>
+            Copyright &copy;2018 | <a href="#"> All Rights Reserved Hassan Goubil</a> | <div id="currentDate"></div>
+        </footer>
+    <script src="scripts/currentDate.js"></script>
+    <script  src="scripts/hamburger.js"></script>
+	</main></html>
