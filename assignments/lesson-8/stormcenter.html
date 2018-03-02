@@ -44,71 +44,52 @@ body {
 	<a class="active"  href= "#StormCenter">STorm Center</a>
 	<a href="gallery-7.html">Gallery</a>
 			</div>
-			<main>
-	<picture>
-                <source media="(max-width: 860px)" srcset="images/large/franklin-large.jpeg">
-                <source media="(max-width: 1439px)" srcset="images/large/franklin-large.jpeg">
-                <source media="(min-width: 1440px)" srcset="images/large/franklin-large.jpeg">
-		<img src="images/large/franklin-large.jpeg" alt="">
-	</picture>  
-			 <div class="mainForecast">
-                <table>
-                    <tr>
-                        <th colspan="2">Franklin Weather</th>
-                    </tr>
-                    <tr>
-                        <td><strong>Summary</strong></td>
-                        <td id="summary">Sunny</td>
-                    </tr>
-                    <tr>
-                        <td><strong>High</strong></td>
-                        <td id="high">89&deg;F</td>                    
-                    </tr>
-                    <tr>
-                        <td><strong>Low</strong></td>
-                        <td id="low">66&deg;F</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Precipitation</strong></td>
-                        <td id="precipitation">0%</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Max Wind</strong></td>
-                        <td id="wind">5 mph SW</td>
-					</tr>
-				 </table>
-	</div>  </main>
-			<div class="tenDayForecast">
-                 <table>
-                    <tr>
-                        <th colspan="10">10 Day Forecast</th>
-                    </tr>
-                    <tr id="day">
-                        <td>Day 1</td>
-                        <td>Day 2</td>
-                        <td>Day 3</td>
-                        <td>Day 4</td>
-                        <td>Day 5</td>
-                        <td>Day 6</td>
-                        <td>Day 7</td>
-                        <td>Day 8</td>
-                        <td>Day 9</td>
-                        <td>Day 10</td>
-                    </tr>
-                    <tr>
-                        <td>89&deg;F</td>
-                        <td>87&deg;F</td>
-                        <td>78&deg;F</td>
-                        <td>75&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>79&deg;F</td>
-                        <td>83&deg;F</td>
-                        <td>85&deg;F</td>
-                        <td>89&deg;F</td>
-                    </tr>
-                </table>
-	</div>
+			 <main>
+            <form id="stormSubmission" action"" method="post">
+                <fieldset>
+                    <legend>Personal Infomation</legend>
+                    <label><span>Full Name:</span><input name="fullName" type="text" placeholder="Full Name" pattern="[a-zA-Z -]{5,}" required></label>
+                    <label><span>Email:</span><input name="email" type="email" placeholder="example@email.com" autocomplete="off" required></label>
+                    <label><span>Telphone:</span><input name="telephone" type="tel" placeholder="(123)555-5555" required></label>
+                    <label><span>Zip:</span><input name="zip" type="number" placeholder="84096" pattern="[09]{5,5}"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label><span>Storm Date:</span><input name="stormDate" type="date"></label>
+                    <label><span>Storm Type:</span><input name="stormType" list="stormType">
+                        <datalist id="stormType">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>            
+                    </label>
+                    <label><span>Storm Severity (1 to 10):</span><input name="stormSeverity" type="range" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span></label>
+                    <label><span>Storm Region:</span>
+                        <select name="stormRegion">
+                            <option value="default" selected disabled hidden>Select Region ...</option>
+                            <option value="Franklin">Franklin</option>
+                            <option value="Greenville">Greenville</option>
+                            <option value="Springfield">Springfield</option>
+                        </select></label>
+                    <label><span>User In-Danger Level:</span>
+                        <input class="inputRadio" name="dangerLevel" type="radio" value="yes">Yes
+                        <input class="inputRadio" name="dangerLevel" type="radio" value="no">No
+                        <input class="inputRadio" name="dangerLevel" type="radio" value="maybe">Maybe   
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Comments</legend>
+                    <label><span>Additional Comments:</span>
+                        <textarea name="comments" rows="10" cols="28"></textarea>
+                    </label>
+                </fieldset> 
+                    <input type="submit" value="Submit" class="formButton" formaction="thanks.html">
+                    <input type="reset" value="Reset" class="formButton">
+            </form>
+        </main>
+	
 <footer>
             Weather Or Not | 235 Culumbos Road | FRANKLIN, TN | 468 456 567<br>
             Copyright &copy;2018 | <a href="#"> All Rights Reserved Hassan Goubil</a> | <div id="currentDate"></div>
