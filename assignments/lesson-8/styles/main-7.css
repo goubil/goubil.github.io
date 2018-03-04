@@ -1,313 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
 body {
-    width: 100%   
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    /* Declare the base font-family - from google font api or other */
 }
 
-main {
-    margin: 1.25rem auto;
-    padding: 1rem 0rem;
+header,
+nav,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
-main h2 {
-    color: #5D93FF;
-    font-family: Georgia;
-}
-
-header, footer {
-    color: white;
-    text-align: center;
-    padding: .5rem;
-    margin: auto;
+p {
+    margin: 6px;
 }
 
 header {
-    background-color: #1160FF;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 400px;
 }
 
-footer {
-    background-color: #2A71FF;
+header h1 {
+    text-shadow: -2px 2px #f1f1f1;
 }
 
-footer div {
-    display: inline-block;
+header img {
+    /*float: left;*/
+    width: 12vw;
+    min-width: 90px;
+
 }
 
-h1 {
-    font-family: Georgia;
-    font-size: 2em;
-}
-#subHeaderText {
-    margin-top: -1.375rem;
-    font-family: Georgia;
-    font-size: .60em;
-    text-align: right;
-    margin-right: 30rem;
+header .subheading {
+    margin: 10px;
 }
 
-footer {
-    font-size: .75em;
+nav {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
 }
 
-footer a {
+nav button {}
+
+nav ul {
+    display: inline-flex;
+    flex-flow: column wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: #00008B;
+}
+
+nav ul.hidden {
+    display: none;
+}
+
+nav ul li {
+    /* width: 90px */
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-indent: 0;
+    text-align: left;
+}
+
+div.maininfo {
+    display: inline-flex;
+    flex-flow: column;
+}
+
+main div.maininfo figure {
+    margin: 5px;
+    width: 100%;
+}
+
+main div.maininfo figure img {
+    width: 100%;
+}
+
+div.current {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current img {
+    width: 55px;
+}
+
+div.highlow {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.conditions {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+nav ul li a {
+    /*display: block;*/
     text-decoration: none;
+    padding: 12px 14px;
     color: white;
 }
 
-/* NAVIGATION */
-
-nav ul {
-    padding-left: 0px;
+nav ul li.active {
+    background-color: darkgoldenrod;
+    font-weight: bold;
 }
 
-.navigation {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #94CC22;
-    font-family: Georgia;
-    margin: 0 auto;
-    padding: .5rem 0;
+nav ul li:hover {
+    background-color: #DAA520;
 }
 
-.navigation li a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    padding: .5rem;
-}
+main {}
 
-.navigation li {
-    list-style-type: none;
-}
-
-.navigation li a:hover { 
-    background-color: #79B203; 
-}
-
-.navigation li a.active {
-    background-color: white;
-}
-
-/* END NAVIGATION */
-
-table {
-    padding: 10px;
-    border: 1px solid black;
-}
-
-th {
+main h2 {
     text-align: center;
-    font-size: 1.75em;
-    color: #5D93FF;
-    font-family: Georgia;
 }
 
-/* Main Forecast */
-
-.mainForecast table {
-    padding-bottom: 1.5rem;
+section.info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.mainForecast th {
-    padding-bottom: 2.5rem;
+article {
+    border: 1px solid grey;
+    margin: 2vw;
+}
+
+article h3 {
+    text-align: center;
+    margin: .6em 1em;
+}
+
+article div.town-article {
+
+    display: inline-flex;
+    flex-direction: column;
+    /*WHY IS THIS NOT WORKING !!!!!!!!!!!!*/
 }
 
 
-.mainForecast td {
-    padding-left: 1rem;
-    padding-right: 3rem;
-}
-
-.mainForecast #summary {
-    color: #FFB611;
-    font-weight: 600;
-}
-
-.mainForecast #high {
-    color: #FF4C2A;
-    font-weight: 600;
-}
-
-.mainForecast #precipitation {
-    color: #048CE8;
-    font-weight: 600;
-}
-
-.mainForecast #low {
-    color: #0D48BF;
-    font-weight: 600;
-}
-
-.mainForecast #wind {
-    color: #048CE8;
-    font-weight: 600;
-}
-
-.mainForecast #windChill {
-    color: #048CE8;
-    font-weight: 600;
-}
-
-main p, td {
-    font-family: Verdana;
-    color: #000000;
-    font-size: .85em;
-}
-
-/* 10 Day Forecast */
-
-.tenDayForecast table {
+article div.town-article picture img {
     width: 100%;
-    border: 1px solid black;
-    margin-top: 2.25rem;
+    padding: 2%;
 }
 
-.tenDayForecast th {
-    padding-bottom: 1.25rem;
+section.forecast {
+    display: none;
 }
 
-.tenDayForecast td {
-    border: 0px solid black;
-    text-align: center;
-    padding: .5em;
+article div.town-article section {
+    margin: 2vw;
+    width: 95%;
+
 }
 
-.tenDayForecast #day {
-    background-color: #94CC22;
-    font-weight: 600;
+article div.town-article picture {
+    width: 100%;
+
 }
 
-/* Grid Container */
-
-.container1 {
+main.gallerycontainer {
+    width: 94vw;
     display: grid;
-    grid-template-columns: 2.5% 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 2vw;
+    margin: 7px;
 }
 
-picture {
-    grid-column-start: 2; 
-    grid-column-end: 2; 
-    grid-row-start: 1; 
-    grid-row-end: 2; 
-}
-
-.mainForecast {
-    grid-column-start: 3; 
-    grid-column-end: 3; 
-    grid-row-start: 1; 
-    grid-row-end: 2; 
-    padding-top: 2.5rem;
-}
-
-.container2 {
-    display: grid;
-    grid-template-rows: 1fr;
-}
-
-.tenDayForecast {
-    padding: 2rem;
-}
-
-.weatherStory, .franklinStory, .springfieldStory {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 5rem;
-}
-
-.greenvilleStory {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 5rem;
-}
-
-.containerMainStory {
-    padding-left: 5rem;
-    padding-right: 3rem;
-}
-
-.franklinStory, .greenvilleStory, .springfieldStory {
-    padding-top: 1rem;
-    padding-bottom: .75rem;
-    padding-right: 5rem;
-}
-
-form {
-    margin: 1em 3%;
-    font-family: Verdana;
-    max-width: 70%;
-    padding-left: 5rem;
-}
-
-fieldset {
-    border-radius: .5em;
-    margin: 1.5em 0;
-    border: 2.5px solid #2A71FF;
-}
-
-legend {
-    font-weight: 600;
-    padding: .5em;
-    border: 2.5px solid #2A71FF;
-    border-radius: .4rem;
-    color: #5D93FF;
-}
-
-label {
-    display: block;
-    margin: .5em;
-    font-size: .8em;
-}
-
-label span {
-    display: block;
-    padding-top: .5em;
-    padding-bottom: .2em;
-}
-
-button, html [type="button"], [type="reset"], [type="submit"] {
-    background: #94CC22;
-    font-family: Verdana;
-    border-radius: .2em;
-    width: 10%;
-    box-shadow: 1px 5px 5px gray;
-}
-
-button, input, optgroup, select, textarea {
-    font-family: Verdana;
-    font-size: .8rem;
-}
-
-.inputRadio {
-    width: 24px;
-    height: 24px;
-    position: relative;
-    top: 6px
-}
-
-.thanks {
-    padding-left: 2em;
-}
-
-@media only screen and (max-width: 860px) {
-    .mainForecast td {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    main.gallerycontainer figure {
+        margin: 0;
+        text-align: center;
+        border-radius: 8px;
     }
-    
-    #subHeaderText {
-    margin-top: -1.375rem;
-    font-family: Georgia;
-    font-size: .60em;
-    text-align: right;
-    margin-right: 15rem;
-    }
+
+main.gallerycontainer figure img {
+    width: 100%;
+    border-radius: 7px;
 }
+
+
+footer {
+    margin: 2%;
+}
+
+footer aside {}
+
+footer > p {}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
 
