@@ -1,0 +1,246 @@
+body {
+    width: 100%   
+}
+
+main p, td {
+    font-family: Verdana;
+    color: #000000;
+    font-size: .85em;
+}
+
+main h2 {
+    color: #5D93FF;
+    font-family: Georgia;
+}
+
+header, footer {
+    color: white;
+    text-align: center;
+    padding: 1px 0px;
+    font-family: Georgia;
+}
+
+header {
+    background-color: #1160FF;
+}
+
+footer {
+    background-color: #2A71FF;
+}
+
+h1 {
+    font-family: Georgia;
+    font-size: 2em;
+}
+#subHeaderText {
+    margin-top: -22px;
+    font-family: Georgia;
+    font-size: .60em;
+    text-align: right;
+    margin-right: 15px;
+}
+
+footer {
+    font-size: .75em;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer div {
+    display: inline-block;
+}
+
+/* NAVIGATION */
+
+nav ul {
+    padding-left: 0px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #94CC22;
+    font-family: Georgia;
+    margin: 0 auto;
+    padding: .5rem 0;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: .3rem 5rem;
+}
+
+.navigation li {
+    list-style-type: none;
+    padding-top: .3rem;
+}
+
+.navigation .flexItem {
+    padding: .3rem;
+}
+
+.navigation li a:hover { 
+    background-color: #79B203; 
+}
+
+.navigation li a.active {
+    background-color: white;
+}
+
+/* END NAVIGATION */
+
+/* Main Container */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* END MAIN CONTAINER */
+
+table {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+th {
+    text-align: center;
+    font-size: 1.75em;
+    color: #5D93FF;
+    padding-bottom: 20px;
+    font-family: Georgia;
+}
+
+/* Main Forecast */
+
+.mainForecast {
+    margin-top: 1.5rem;
+}
+
+.mainForecast #summary {
+    color: #FFB611;
+    font-weight: 600;
+}
+
+.mainForecast #high {
+    color: #FF4C2A;
+    font-weight: 600;
+}
+
+.mainForecast #precipitation {
+    color: #048CE8;
+    font-weight: 600;
+}
+
+.mainForecast #low {
+    color: #0D48BF;
+    font-weight: 600;
+}
+
+.mainForecast #wind {
+    color: #048CE8;
+    font-weight: 600;
+}
+
+.mainForecast #windChill {
+    color: #048CE8;
+    font-weight: 600;
+}
+
+/* End Main Forecast */
+
+/* 10 Day Forecast */
+
+.tenDayForecast {
+    display: none;
+}
+
+/* End 10 Day Forecast */
+
+img {
+    padding-top: 1.5rem;
+}
+
+.weatherStory, .franklinStory, .greenvilleStory, .springfieldStory {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerMainStory {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+form {
+    margin: 1em 3%;
+    font-family: Verdana;
+    max-width: 100%;
+    padding-left: .5rem;
+}
+
+fieldset {
+    border-radius: .5em;
+    margin: 1.5em 0;
+    border: 2.5px solid #2A71FF;
+}
+
+legend {
+    font-weight: 600;
+    padding: .5em;
+    border: 2.5px solid #2A71FF;
+    border-radius: .4rem;
+    color: #5D93FF;
+}
+
+label {
+    display: block;
+    margin: .5em;
+    font-size: .8em;
+}
+
+label span {
+    display: block;
+    padding-top: .5em;
+    padding-bottom: .2em;
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+    background: #94CC22;
+    font-family: Verdana;
+    border-radius: .2em;
+    width: 100%;
+    box-shadow: 5px 5px 5px gray;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: Verdana;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.inputRadio {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 6px
+}
+
+.thanks {
+    padding-left: 2em;
+}
+
