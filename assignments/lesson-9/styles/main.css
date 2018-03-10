@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    /* Declare the base font-family - from google font api or other */
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+p {
+    margin: 6px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 400px;
+}
+
+header h1 {
+    text-shadow: -2px 2px #f1f1f1;
+}
+
+header img {
+    /*float: left;*/
+    width: 12vw;
+    min-width: 90px;
+
+}
+
+header .subheading {
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+nav button {}
+
+nav ul {
+    display: inline-flex;
+    flex-flow: column wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: #00008B;
+}
+
+nav ul.hidden {
+    display: none;
+}
+
+nav ul li {
+    /* width: 90px */
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-indent: 0;
+    text-align: left;
+}
+
+div.maininfo {
+    display: inline-flex;
+    flex-flow: column;
+}
+
+main div.maininfo figure {
+    margin: 5px;
+    width: 100%;
+}
+
+main div.maininfo figure img {
+    width: 100%;
+}
+
+div.current {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current img {
+    width: 55px;
+}
+
+div.highlow {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.conditions {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+nav ul li a {
+    /*display: block;*/
+    text-decoration: none;
+    padding: 12px 14px;
+    color: white;
+}
+
+nav ul li.active {
+    background-color: darkgoldenrod;
+    font-weight: bold;
+}
+
+nav ul li:hover {
+    background-color: #DAA520;
+}
+
+main {}
+
+main h2 {
+    text-align: center;
+}
+
+section.info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    border: 1px solid grey;
+    margin: 2vw;
+}
+
+article h3 {
+    text-align: center;
+    margin: .6em 1em;
+}
+
+article div.town-article {
+
+    display: inline-flex;
+    flex-direction: column;
+    /*WHY IS THIS NOT WORKING !!!!!!!!!!!!*/
+}
+
+
+article div.town-article picture img {
+    width: 100%;
+    padding: 2%;
+}
+
+section.forecast {
+    display: none;
+}
+
+article div.town-article section {
+    margin: 2vw;
+    width: 95%;
+
+}
+
+article div.town-article picture {
+    width: 100%;
+
+}
+
+main.gallerycontainer {
+    width: 94vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2vw;
+    margin: 7px;
+}
+
+    main.gallerycontainer figure {
+        margin: 0;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+main.gallerycontainer figure img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+
+footer {
+    margin: 2%;
+}
+
+footer aside {}
+
+footer > p {}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
