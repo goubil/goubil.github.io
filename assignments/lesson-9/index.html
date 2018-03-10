@@ -1,37 +1,51 @@
 
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="home_page">
+<html>
+      <meta charset="utf-8">
+	<title>Goubil's Online weather</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Home - Weather or Not</title>
-
-        <!--Style Sheets-->
-        <link href="styles/normalize.css" rel="stylesheet">
-        <!--phone-default-->
-        <link href="styles/main.css" rel="stylesheet">
-        <!--enhance-tablet-->
-        <link href="styles/medium.css" rel="stylesheet">
-        <!--enhance-desktop-->
-        <link href="styles/large.css" rel="stylesheet">
-		<img src="images/sunydaylogo.png" alt="A sunny day."><span style="font-family: Kaiti TC Regular;">Weather Or Not  ... The best weather is within you&nbsp;</span>
-
-        <!--Navigation Here-->
-        <nav class="clearfix">
-            <button onclick="myFunction()">&#9776;</button>
-            <ul id="primaryNavigation" class="hide">
-                <li><a class="active" href="https://goubil.github.io/assignments/lesson-9/index.html">Home</a></li>
-                <li><a href="https://goubil.github.io/assignments/franklin-7/franklin-7.html">Franklin</a></li>
-                <li><a href="#greenville">Greenville</a></li>
-                <li><a href="#springfield">Springfield</a></li>
-                <li><a href="https://goubil.github.io/assignments/lesson-8/stormcenter.html">Storm Center</a></li>
-                <li><a href="https://goubil.github.io/assignments/franklin-7/gallery-7.html">Gallery</a></li>
-            </ul>
-        </nav>
-
-        <!--Content Here-->
-       <main>
+        <link href="styles/normalize.css" rel="stylesheet" >
+        <link href="styles/main.css" rel="stylesheet" >
+        <link href="styles/medium.css" rel="stylesheet" >
+	<link href="styles/large.css" rel="stylesheet" >
+       
+	<img src="images/sunydaylogo.png" alt="A sunny day."><span style="font-family: Kaiti TC Regular;">Weather Or Not  ... The best weather is within you&nbsp;</span>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <style>
+      body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      }
+      .topnav {
+      overflow: hidden;
+      background-color: #333;
+      }
+      .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 14px;
+      text-decoration: none;
+      font-size: 18px;
+      }
+      .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+      }
+      .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+      }
+   </style>
+   <div class="topnav">
+      <a class="active" href="https://goubil.github.io/assignments/lesson-9/index.html">Home</a>
+      <a href="https://goubil.github.io/assignments/franklin-7/franklin-7.html">Franklin</a>
+      <a href="#Greenville">Greenville</a>
+      <a href="#Springfield">Springfield</a>
+      <a href= "https://goubil.github.io/assignments/lesson-8/stormcenter.html">STorm Center</a>
+      <a href="https://goubil.github.io/assignments/franklin-7/gallery-7.html">Gallery</a>
+   </div> 
+			<main>
             <article class="weatherStory">
                 <div class="containerImage">
                     <picture>
@@ -126,13 +140,34 @@
                 </div>
             </article>
         </main>
-		<script type="text/javascript" src="scripts/hamburger.js" defer></script>
-        <script type="text/javascript" src="scripts/currentDate.js" defer></script>
-        <script type="text/javascript" src="scripts/windchill.js" defer></script>
-        <script type="text/javascript" src="scripts/wayfinding.js" defer></script>
 	
 <footer>
             Weather Or Not | 235 Culumbos Road | FRANKLIN, TN | 468 456 567<br>
-	Copyright &copy;2018 | <a href="#"> All Rights Reserved Hassan Goubil</a> | <div id="currentDate"></div>
-		</footer></head>
+            Copyright &copy;2018 | <a href="#"> All Rights Reserved Hassan Goubil</a> | <div id="currentDate"></div>
+        </footer>
+    <script src="scripts/currentDate.js"></script>
+	<script  src="scripts/hamburger.js"></script>
+		 <script>
+            $(document).ready(function(){
+                var URL = $(location).attr('pathname');
+                if (URL == '/index.html'){
+                    $('.flexItem1 a').addClass('active');
+                }
+                if (URL == '/https://goubil.github.io/assignments/franklin-7/franklin-7.htm'){
+                    $('.flexItem2 a').addClass('active');
+                }
+                if (URL == '/#Greenville'){
+                    $('.flexItem3 a').addClass('active');
+                }
+                if (URL == '/#springfield'){
+                    $('.flexItem4 a').addClass('active');
+                }
+                if (URL == '/https://goubil.github.io/assignments/lesson-8/stormcenter.html'){
+                    $('.flexItem5 a').addClass('active');
+                }
+                if (URL == '/https://goubil.github.io/assignments/franklin-7/gallery-7.html'){
+                    $('.flexItem6 a').addClass('active');
+                }
+            });
+		</script>
 	</html> 
