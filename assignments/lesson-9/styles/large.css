@@ -1,296 +1,40 @@
-body {
-    width: 100%   
-}
+@media only screen and (min-width: 64em){
 
-main {
-    margin: 1.25rem auto;
-    padding: 1rem 0rem;
-}
+/* Navigation */
+    nav ul li {
+        flex-basis: auto;
+        -ms-flex: auto;
+    }
+    nav ul li {
+        -ms-flex: 0 0 auto;
+    }
+    nav ul li a {
+        padding: .5rem 1rem;
+    }
 
-main h2 {
-    color: #5D93FF;
-    font-family: Georgia;
-}
-
-header, footer, nav {
-    color: white;
-    text-align: center;
-}
-
-header {
-    background-color: #1160FF;
-}
-
-footer {
-    background-color: #2A71FF;
-}
-
-h1 {
-    font-family: Georgia;
-    font-size: 2em;
-}
-#subHeaderText {
-    margin-top: -1.375rem;
-    font-family: Georgia;
-    font-size: .60em;
-    text-align: right;
-    margin-right: 43rem;
-}
-
-footer {
-    font-size: .75em;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-}
-
-footer div {
-    display: inline-block;
-}
-
-/* NAVIGATION */
-
-nav ul {
-    padding-left: 0px;
-}
-
-.navigation {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #94CC22;
-    margin: 0 auto;
-    font-family: Georgia;
-    padding: .5rem 0;
-}
-
-.navigation li a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    padding: .5rem;
-}
-
-.navigation li {
-    list-style-type: none;
-}
-
-.navigation li a:hover { 
-    background-color: #79B203; 
-}
-
-.navigation li a.active {
-    background-color: white;
-}
-
-/* END NAVIGATION */
-
-table {
-    padding: 10px;
-    border: 1px solid black;
-}
-
-th {
-    text-align: center;
-    font-size: 1.75em;
-    color: #5D93FF;
-    font-family: Georgia;
-}
-
-/* Main Forecast */
-
-.mainForecast table {
-    padding-bottom: 1.5rem;
-}
-
-.mainForecast th {
-    padding-bottom: 2.5rem;
-}
-
-.mainForecast td {
-    padding-left: 5rem;
-    padding-right: 5rem;
-}
-
-.mainForecast #summary {
-    color: #FFB611;
-    font-weight: 600;
-}
-
-.mainForecast #high {
-    color: #FF4C2A;
-    font-weight: 600;
-}
-
-.mainForecast #precipitation {
-    color: #048CE8;
-    font-weight: 600;
-}
-
-.mainForecast #low {
-    color: #0D48BF;
-    font-weight: 600;
-}
-
-.mainForecast #wind {
-    color: #048CE8;
-    font-weight: 600;
-}
-
-.mainForecast #windChill {
-    color: #048CE8;
-    font-weight: 600;
-}
-
-main p, td {
-    font-family: Verdana;
-    color: #000000;
-    font-size: .85em;
-}
-
-/* 10 Day Forecast */
-
-.tenDayForecast table {
-    width: 100%;
-    border: 1px solid black;
-    padding-bottom: 2em;
-}
-
-.tenDayForecast th {
-    padding-bottom: 1.25rem;
-}
-
-.tenDayForecast td {
-    border: 0px solid black;
-    text-align: center;
-    padding: .5em;
-}
-
-.tenDayForecast #day {
-    background-color: #94CC22;
-    font-weight: 600;
-}
-
-/* Grid Container */
-
-.container1 {
-    display: grid;
-    grid-template-columns: 5% 1fr 1fr;
-    grid-gap: 2rem;
-    grid-template-rows: 1fr;
-}
-
-picture {
-    grid-column-start: 2; 
-    grid-column-end: 2; 
-    grid-row-start: 1; 
-    grid-row-end: 2; 
-}
-
-.mainForecast {
-    grid-column-start: 3; 
-    grid-column-end: 3; 
-    grid-row-start: 1; 
-    grid-row-end: 2; 
-    padding-top: 5rem;
-}
-
-.container2 {
-    display: grid;
-    grid-template-rows: 1fr;
-}
-
-.tenDayForecast {
-    padding: 2rem;
-}
-
-.weatherStory, .franklinStory, .springfieldStory {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 5rem;
-}
-
-.greenvilleStory {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 5rem;
-}
-
-.containerMainStory {
-    padding-left: 5rem;
-    padding-right: 3rem;
-}
-
-.franklinStory, .greenvilleStory, .springfieldStory {
-    padding-top: 1rem;
-    padding-bottom: .75rem;
-    padding-right: 5rem;
-}
-
-form {
-    margin: 1em 3%;
-    font-family: Verdana;
-    max-width: 70%;
-    padding-left: 5rem;
-}
-
-fieldset {
-    border-radius: .5em;
-    margin: 1.5em 0;
-    border: 2.5px solid #2A71FF;
-}
-
-legend {
-    font-weight: 600;
-    padding: .5em;
-    border: 2.5px solid #2A71FF;
-    border-radius: .4rem;
-    color: #5D93FF;
-}
-
-label {
-    display: block;
-    margin: .5em;
-    font-size: .8em;
-}
-
-label span {
-    display: block;
-    padding-top: .5em;
-    padding-bottom: .2em;
-}
-
-button, html [type="button"], [type="reset"], [type="submit"] {
-    background: #94CC22;
-    font-family: Verdana;
-    border-radius: .2em;
-    width: 10%;
-    box-shadow: 1px 5px 5px gray;
-}
-
-button, input, optgroup, select, textarea {
-    font-family: Verdana;
-    font-size: .8rem;
-}
-
-.inputRadio {
-    width: 24px;
-    height: 24px;
-    position: relative;
-    top: 6px
-}
-
-.thanks {
-    padding-left: 2em;
+/* Grid */
+    div.gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+    div.gallery figure:hover {
+        box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+    }
+    .hideSmallMedium {
+        display: flex;
+        display: -ms-flexbox;
+        justify-content: space-between;
+        margin: 10pt;
+    }
+    .hideSmallMedium p{
+        text-align: center;
+    }
+    .hideSmallMedium img{
+        max-width: 95%;
+    }
+    .hideSmallLarge{
+        display: none;
+    }
 }
 
