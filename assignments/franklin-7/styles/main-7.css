@@ -1,215 +1,155 @@
-* {
-    box-sizing: border-box;
+/*-----Prevents phones from resizing in landscape mode-----*/
+html {-webkit-text-size-adjust: none;}
+
+/*-----apply a natural box layout model to all elements-----*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+/* Main */
+html {
+    max-width: 1100px;
+    margin: auto;
+}
+header, footer {
+    background-color: grey;
+    color: ghostwhite;
+    padding: 1%;
+    border: 1pt solid black;
+    margin: 1%;
+}
+h1 {
+    margin-left: 2%;
+}
+h2 {
+    margin-left: 4%;
+}
+figure.photoFullWidth {
+    margin: 0;
+    margin-left: 2%;
+    width: 96%;
+}
+figure.photoFullWidth img {
+    width: 100%;
 }
 
-/* This wildcard applies to all elements ensuring a box layout model */
-
-body {
-
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    /* Declare the base font-family - from google font api or other */
-}
-
-header,
-nav,
-main,
-footer {
-    /* the comma means apply the following CSS declarations to all of the listed elements */
-    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-}
-
-p {
-    margin: 6px;
-}
-
-header {
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: row wrap;
-    align-items: center;
-    width: 400px;
-}
-
-header h1 {
-    text-shadow: -2px 2px #f1f1f1;
-}
-
-header img {
-    /*float: left;*/
-    width: 12vw;
-    min-width: 90px;
-
-}
-
-header .subheading {
-    margin: 10px;
-}
-
+/* Navigation */
 nav {
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
+    background-color: skyblue;
 }
-
-nav button {}
-
+nav button {
+    position: absolute;
+    top: .5rem;
+    right: 2%;
+}
 nav ul {
-    display: inline-flex;
-    flex-flow: column wrap;
-    list-style-type: none;
-    justify-content: space-between;
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    background-color: #00008B;
 }
-
-nav ul.hidden {
+nav ul.show {
+    display: flex;
+    display: -ms-flexbox;
+}
+nav ul.hide {
     display: none;
 }
-
 nav ul li {
-    /* width: 90px */
-    padding-top: 14px;
-    padding-bottom: 14px;
-    text-indent: 0;
-    text-align: left;
+    list-style-type: none;
+    flex-basis: 100%;
+    -ms-flex: 100%;
 }
-
-div.maininfo {
-    display: inline-flex;
-    flex-flow: column;
-}
-
-main div.maininfo figure {
-    margin: 5px;
-    width: 100%;
-}
-
-main div.maininfo figure img {
-    width: 100%;
-}
-
-div.current {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.current img {
-    width: 55px;
-}
-
-div.highlow {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.conditions {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
 nav ul li a {
-    /*display: block;*/
+    text-align: center;
+    display: block;
+    color: black;
+    padding: .5rem 0;
     text-decoration: none;
-    padding: 12px 14px;
-    color: white;
+    border-bottom: solid 1px deepskyblue;
+}
+nav ul li a:hover {
+    background-color: dimgray;
+}
+nav ul li.active a {
+    background-color: lightgoldenrodyellow;
 }
 
-nav ul li.active {
-    background-color: darkgoldenrod;
-    font-weight: bold;
+/* Table */
+table, th, td {
+    border: 1px solid black;
 }
-
-nav ul li:hover {
-    background-color: #DAA520;
+.hideSmall {
+    display: none; margin-left: 40px;
 }
-
-main {}
-
-main h2 {
-    text-align: center;
+.hideSmallLarge {
+    display: none;
 }
-
-section.info {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-
-article {
-    border: 1px solid grey;
-    margin: 2vw;
-}
-
-article h3 {
-    text-align: center;
-    margin: .6em 1em;
-}
-
-article div.town-article {
-
-    display: inline-flex;
-    flex-direction: column;
-    /*WHY IS THIS NOT WORKING !!!!!!!!!!!!*/
-}
-
-
-article div.town-article picture img {
-    width: 100%;
-    padding: 2%;
-}
-
-section.forecast {
+.hideSmallMedium {
     display: none;
 }
 
-article div.town-article section {
-    margin: 2vw;
-    width: 95%;
-
-}
-
-article div.town-article picture {
-    width: 100%;
-
-}
-
-main.gallerycontainer {
-    width: 94vw;
+/* Grid */
+div.gallery {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2vw;
-    margin: 7px;
+    grid-gap: 5px;
 }
-
-    main.gallerycontainer figure {
-        margin: 0;
-        text-align: center;
-        border-radius: 8px;
-    }
-
-main.gallerycontainer figure img {
+div.gallery figure img {
     width: 100%;
+}
+figcaption {
+    text-align: center;
+    color: blue;
+    font-size: 1.5rem;
+}
+#story {
+    margin: 10pt
+}
+
+/*-----Other-----*/
+.clearfix:after, .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/*--Storm Center Form--*/
+form#stormform {
+    margin: 1em 3%;
+}
+legend {
+    color: blue;
+    font-size: 24px;
+}
+label, #label {
+    display: block;
+    margin: .75em;
+}
+label span {
+    display: block;
+}
+#ratingvalue {
+    display: inline;
+}
+.submitbutton {
+    -webkit-appearance: none;
+    background-color: lightgoldenrodyellow;
+    border: solid 2px black;
     border-radius: 7px;
+    margin: .75em 1.5em;
+    padding: .5em;
+    width: 30%
+
 }
 
 
-footer {
-    margin: 2%;
-}
 
-footer aside {}
 
-footer > p {}
 
-/* This structure refers to p elements that are direct children of the footer element */
 
-/* Other Class Selectors */
+
+
 
