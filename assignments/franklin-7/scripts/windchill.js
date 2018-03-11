@@ -9,5 +9,3 @@ var final = 35.74 + (0.6215 * avgtemp) - (35.75 * Math.pow(ws, 0.16)) + (0.4275 
 final = final.toFixed(2);
 
 document.getElementById("windchill").innerHTML = final;
-
-

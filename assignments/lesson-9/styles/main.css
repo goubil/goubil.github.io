@@ -1,246 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
 body {
-    width: 100%   
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    /* Declare the base font-family - from google font api or other */
 }
 
-main p, td {
-    font-family: Verdana;
-    color: #000000;
-    font-size: .85em;
+header,
+nav,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
-main h2 {
-    color: #5D93FF;
-    font-family: Georgia;
-}
-
-header, footer {
-    color: white;
-    text-align: center;
-    padding: 1px 0px;
-    font-family: Georgia;
+p {
+    margin: 6px;
 }
 
 header {
-    background-color: #1160FF;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 400px;
 }
 
-footer {
-    background-color: #2A71FF;
+header h1 {
+    text-shadow: -2px 2px #f1f1f1;
 }
 
-h1 {
-    font-family: Georgia;
-    font-size: 2em;
-}
-#subHeaderText {
-    margin-top: -22px;
-    font-family: Georgia;
-    font-size: .60em;
-    text-align: right;
-    margin-right: 15px;
+header img {
+    /*float: left;*/
+    width: 12vw;
+    min-width: 90px;
+
 }
 
-footer {
-    font-size: .75em;
+header .subheading {
+    margin: 10px;
 }
 
-footer a {
-    text-decoration: none;
-    color: white;
+nav {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
 }
 
-footer div {
-    display: inline-block;
-}
-
-/* NAVIGATION */
+nav button {}
 
 nav ul {
-    padding-left: 0px;
-}
-
-.navigation {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    background-color: #94CC22;
-    font-family: Georgia;
-    margin: 0 auto;
-    padding: .5rem 0;
-}
-
-.navigation li a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    padding: .3rem 5rem;
-}
-
-.navigation li {
+    display: inline-flex;
+    flex-flow: column wrap;
     list-style-type: none;
-    padding-top: .3rem;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: #00008B;
 }
 
-.navigation .flexItem {
-    padding: .3rem;
-}
-
-.navigation li a:hover { 
-    background-color: #79B203; 
-}
-
-.navigation li a.active {
-    background-color: white;
-}
-
-/* END NAVIGATION */
-
-/* Main Container */
-
-.container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-/* END MAIN CONTAINER */
-
-table {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid black;
-}
-
-th {
-    text-align: center;
-    font-size: 1.75em;
-    color: #5D93FF;
-    padding-bottom: 20px;
-    font-family: Georgia;
-}
-
-/* Main Forecast */
-
-.mainForecast {
-    margin-top: 1.5rem;
-}
-
-.mainForecast #summary {
-    color: #FFB611;
-    font-weight: 600;
-}
-
-.mainForecast #high {
-    color: #FF4C2A;
-    font-weight: 600;
-}
-
-.mainForecast #precipitation {
-    color: #048CE8;
-    font-weight: 600;
-}
-
-.mainForecast #low {
-    color: #0D48BF;
-    font-weight: 600;
-}
-
-.mainForecast #wind {
-    color: #048CE8;
-    font-weight: 600;
-}
-
-.mainForecast #windChill {
-    color: #048CE8;
-    font-weight: 600;
-}
-
-/* End Main Forecast */
-
-/* 10 Day Forecast */
-
-.tenDayForecast {
+nav ul.hidden {
     display: none;
 }
 
-/* End 10 Day Forecast */
-
-img {
-    padding-top: 1.5rem;
+nav ul li {
+    /* width: 90px */
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-indent: 0;
+    text-align: left;
 }
 
-.weatherStory, .franklinStory, .greenvilleStory, .springfieldStory {
+div.maininfo {
+    display: inline-flex;
+    flex-flow: column;
+}
+
+main div.maininfo figure {
+    margin: 5px;
+    width: 100%;
+}
+
+main div.maininfo figure img {
+    width: 100%;
+}
+
+div.current {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.containerMainStory {
-    padding-left: .5rem;
-    padding-right: .5rem;
+.current img {
+    width: 55px;
 }
 
-form {
-    margin: 1em 3%;
-    font-family: Verdana;
-    max-width: 100%;
-    padding-left: .5rem;
+div.highlow {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-fieldset {
-    border-radius: .5em;
-    margin: 1.5em 0;
-    border: 2.5px solid #2A71FF;
+.conditions {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
-legend {
-    font-weight: 600;
-    padding: .5em;
-    border: 2.5px solid #2A71FF;
-    border-radius: .4rem;
-    color: #5D93FF;
+nav ul li a {
+    /*display: block;*/
+    text-decoration: none;
+    padding: 12px 14px;
+    color: white;
 }
 
-label {
-    display: block;
-    margin: .5em;
-    font-size: .8em;
+nav ul li.active {
+    background-color: darkgoldenrod;
+    font-weight: bold;
 }
 
-label span {
-    display: block;
-    padding-top: .5em;
-    padding-bottom: .2em;
+nav ul li:hover {
+    background-color: #DAA520;
 }
 
-button, html [type="button"], [type="reset"], [type="submit"] {
-    background: #94CC22;
-    font-family: Verdana;
-    border-radius: .2em;
+main {}
+
+main h2 {
+    text-align: center;
+}
+
+section.info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    border: 1px solid grey;
+    margin: 2vw;
+}
+
+article h3 {
+    text-align: center;
+    margin: .6em 1em;
+}
+
+article div.town-article {
+
+    display: inline-flex;
+    flex-direction: column;
+    /*WHY IS THIS NOT WORKING !!!!!!!!!!!!*/
+}
+
+
+article div.town-article picture img {
     width: 100%;
-    box-shadow: 5px 5px 5px gray;
+    padding: 2%;
 }
 
-button, input, optgroup, select, textarea {
-    font-family: Verdana;
-    font-size: 1rem;
-    padding: 1rem;
+section.forecast {
+    display: none;
 }
 
-.inputRadio {
-    width: 24px;
-    height: 24px;
-    position: relative;
-    top: 6px
+article div.town-article section {
+    margin: 2vw;
+    width: 95%;
+
 }
 
-.thanks {
-    padding-left: 2em;
+article div.town-article picture {
+    width: 100%;
+
 }
+
+main.gallerycontainer {
+    width: 94vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2vw;
+    margin: 7px;
+}
+
+    main.gallerycontainer figure {
+        margin: 0;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+main.gallerycontainer figure img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+
+footer {
+    margin: 2%;
+}
+
+footer aside {}
+
+footer > p {}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
 
