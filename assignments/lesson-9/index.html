@@ -11,40 +11,17 @@
        
 	<img src="images/sunydaylogo.png" alt="A sunny day."><span style="font-family: Kaiti TC Regular;">Weather Or Not  ... The best weather is within you&nbsp;</span>
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <style>
-      body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      }
-      .topnav {
-      overflow: hidden;
-      background-color: #333;
-      }
-      .topnav a {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 14px;
-      text-decoration: none;
-      font-size: 18px;
-      }
-      .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-      }
-      .topnav a.active {
-      background-color: #4CAF50;
-      color: white;
-      }
-   </style>
-   <div class="topnav">
-      <a class="active" href="https://goubil.github.io/assignments/lesson-9/index.html">Home</a>
-      <a href="https://goubil.github.io/assignments/franklin-7/franklin-7.html">Franklin</a>
-      <a href="#Greenville">Greenville</a>
-      <a href="#Springfield">Springfield</a>
-      <a href= "https://goubil.github.io/assignments/lesson-8/stormcenter.html">STorm Center</a>
-      <a href="https://goubil.github.io/assignments/franklin-7/gallery-7.html">Gallery</a>
-   </div> 
+     <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul class="hidden" id="hideorshow">
+        <li><a class="active" href="https://goubil.github.io/assignments/lesson-9/index.html">Home</a></li>
+        <li><a  href="https://goubil.github.io/assignments/franklin-7/franklin-7.html">Franklin</a></li>
+        <li><a href="#greenville">Greenville</a></li>
+        <li><a href="#springfield">Springfield</a></li>
+        <li><a href="https://goubil.github.io/assignments/lesson-8/stormcenter.html">Storm Center</a></li>
+        <li><a href="https://goubil.github.io/assignments/franklin-7/gallery-7.html">Gallery</a></li>
+    </ul>
+</nav>
 			<main>
             <article class="weatherStory">
                 <div class="containerImage">
@@ -147,27 +124,5 @@
         </footer>
     <script src="scripts/currentDate.js"></script>
 	<script  src="scripts/hamburger.js"></script>
-		 <script>
-            $(document).ready(function(){
-                var URL = $(location).attr('pathname');
-                if (URL == '/index.html'){
-                    $('.flexItem1 a').addClass('active');
-                }
-                if (URL == '/https://goubil.github.io/assignments/franklin-7/franklin-7.htm'){
-                    $('.flexItem2 a').addClass('active');
-                }
-                if (URL == '/#Greenville'){
-                    $('.flexItem3 a').addClass('active');
-                }
-                if (URL == '/#springfield'){
-                    $('.flexItem4 a').addClass('active');
-                }
-                if (URL == '/https://goubil.github.io/assignments/lesson-8/stormcenter.html'){
-                    $('.flexItem5 a').addClass('active');
-                }
-                if (URL == '/https://goubil.github.io/assignments/franklin-7/gallery-7.html'){
-                    $('.flexItem6 a').addClass('active');
-                }
-            });
-		</script>
+	<script src="scripts/activemenu.js"></script>
 	</html> 
