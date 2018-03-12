@@ -1,90 +1,117 @@
 
-
-<!DOCTYPE html>
-<html> <head>
-      <meta charset="utf-8">
-	   <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Goubil's Online weather</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="styles/normalize.css" rel="stylesheet" >
-        <link href="styles/main.css" rel="stylesheet"  >
-        <link href="styles/medium.css" rel="stylesheet" >
-        <link href="styles/large.css" rel="stylesheet" >
-	 <link rel="stylesheet" href="styles/gallery.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather%7CMerriweather+Sans" rel="stylesheet">  </head>      
-<img src="images/sunydaylogo.png" alt="A sunny day."><span style="font-family: Kaiti TC Regular;">Weather Or Not  ... The best weather is within you&nbsp;</span>
-	<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 14px;
-  text-decoration: none;
-  font-size: 18px;
-}
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-</style>
-<div class="topnav">
-      <a href="https://goubil.github.io/assignments/lesson-9/index.html">Home</a>
-      <a href="https://goubil.github.io/assignments/franklin-7/franklin-7.html">Franklin</a>
-      <a href="#Greenville">Greenville</a>
-      <a href="#Springfield">Springfield</a>
-      <a  href= "https://goubil.github.io/assignments/lesson-8/stormcenter.html">STorm Center</a>
-      <a class="active" href="https://goubil.github.io/assignments/franklin-7/gallery-7.html">Gallery</a>
-   </div> 
-<main class="gallerycontainer">
-                <figure>
-                <img src="images/large/hillside.jpg" alt= "Oneonta Alabama">
-                    <figcaption>A Sunny Day on the Hillside, Oneonta Alabama</figcaption>
-                </figure> 
-				<figure>
-					<img src="images/large/destin%20florida.jpg" alt="Beach Florida" >
-                    <figcaption>A Beach View, Destin Florida</figcaption>
-                </figure>
-
-                <figure>
-                <img src="images/large/lincolin.jpg"                alt="Sunset Wheat Field" >
-                    <figcaption>A Wheat Field Sunset, Lincoln Nebraska</figcaption>
-				</figure>
-	<div><figure>
-                <img src="images/large/NC.jpg" alt="Lake Ashville, North Carolina" >
-                    <figcaption>Mountain View of the Lake,  Ashville North Carolina</figcaption>
-		</figure> </div>
-	<div>
-
-               <figure>
-                <img src="images/large/Bloomington.jpg"             alt="Dirt Road Sunny Day" >
-                    <figcaption>Sunny Dirt Road, Bloomington Indiana</figcaption>
-		</figure></div>
-	<div>
-
-               <figure>
-                <img src="images/large/Athens.jpg"                  alt="Lonely Oak Tree" >
-                    <figcaption>A Lonely Oak Tree, Athens Alabama</figcaption>
-                </figure>
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+         <meta charset="utf-8">
+        <title>Gallery</title>
+        <meta name="description" content="Gallery of stunning weather images">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" media="(max-width: 735px)" href="styles/main.css">
+        <link rel="stylesheet" media="(min-width: 736px)" href="styles/medium.css">
+        <link rel="stylesheet" media="(min-width: 1440px)" href="styles/large.css">
+        <link rel="stylesheet" href="styles/gallery.css">
+   </head>
+   <body>
+      <header>
+         <h1>Weather or Not</h1>
+         <p id="subHeaderText">The place to find your local weather forecast</p>
+         <img src="images/sunydaylogo.png" alt="A sunny day."><span style="font-family: Kaiti TC Regular;">&nbsp;</span>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      </header>
+       <nav>
+         <ul class="navigation">
+            <li class="flexItem"><a  href="https://goubil.github.io/assignments/lesson-9/index.html">HOME</a></li>
+            <li class="flexItem"><a href="https://goubil.github.io/assignments/franklin-7/franklin-7.html">FRANKLIN</a></li>
+            <li class="flexItem"><a href="#greenville">GREENVILLE</a></li>
+            <li class="flexItem"><a href="#springfield">SPRINGFIELD</a></li>
+            <li class="flexItem"><a href="https://goubil.github.io/assignments/lesson-8/stormcenter.html">STORM CENTER</a></li>
+            <li class="flexItem"><a class="active" href="https://goubil.github.io/assignments/franklin-7/gallery-7.html">GALLERY</a></li>
+         </ul>
+      </nav>
+        <main class="gridContainer">
+           <div>
+                <picture>
+                    <source media="(max-width: 860px)" srcset="images/large/hillside.jpg 1.5x">
+                    <source media="(max-width: 1439px)" srcset="images/large/hillside.jpg 1x">
+                    <source media="(min-width: 1440px)" srcset="images/large/hillside.jpg 1x">
+                    <img src="images/hillside.jpg" alt="Sunny day">
+                </picture>
+                    <p>A Sunny Day on the Hillside, Oneonta Alabama.</p>
+            </div>
+           <div>
+                <picture>
+                    <source media="(max-width: 860px)" srcset="images/large/destin%20florida.jpg 1.5x">
+                    <source media="(max-width: 1439px)" srcset="images/large/destin%20florida.jpg 1x">
+                    <source media="(min-width: 1440px)" srcset="images/large/destin%20florida.jpg 1x">
+                    <img src="images/destin%20florida.jpg" alt="A Beach View, Destin Florida">
+               </picture>
+                    <p>A Beach View, Destin Florida.</p>
+            </div>
+           <div>
+                <picture>
+                    <source media="(max-width: 860px)" srcset="images/large/lincolin.jpg 1.5x">
+                    <source media="(max-width: 1439px)" srcset="images/large/lincolin.jpg 1x">
+                    <source media="(min-width: 1440px)" srcset="images/large/lincolin.jpg 1x">
+                    <img src="lincolin.jpg" alt="Sunset">
+               </picture>
+                    <p>A Wheat Field Sunset, Lincoln Nebraska.</p>
+            </div>
+           <div>
+                <picture>
+                    <source media="(max-width: 860px)" srcset="images/large/NC.jpg 1.5x">
+                    <source media="(max-width: 1439px)" srcset="images/large/NC.jpg 1x">
+                    <source media="(min-width: 1440px)" srcset="images/large/NC.jpg 1x">
+                    <img src="images/photo_4.jpg" alt="Mountain">
+               </picture>
+                    <p>Mountain View of the Lake, Ashville North Carolina.</p>
+            </div>
+           <div>
+                <picture>
+                    <source media="(max-width: 860px)" srcset="images/large/Bloomington.jpg 1.5x">
+                    <source media="(max-width: 1439px)" srcset="images/large/Bloomington.jpg 1x">
+                    <source media="(min-width: 1440px)" srcset="images/large/Bloomington.jpg 1x">
+                    <img src="images/Bloomington.jpg" alt="Dirt">
+               </picture>
+                    <p>Sunny Dirt Road, Bloomington Indiana.</p>
+            </div>
+           <div>
+                <picture>
+                    <source media="(max-width: 860px)" srcset="images/large/Athens.jpg 1.5x">
+                    <source media="(max-width: 1439px)" srcset="images/large/Athens.jpg 1x">
+                    <source media="(min-width: 1440px)" srcset="images/large/Athens.jpg 1x">
+                    <img src="images/photo_6.jpg" alt="Oak Tree">
+               </picture>
+                    <p>A Lonely Oak Tree, Athens Alabama.</p>
             </div>
         </main>
-        <br>
-       <footer>
-            Weather Or Not | 235 Culumbos Road | FRANKLIN, TN | 468 456 567<br>
-            Copyright &copy;2018 | <a href="#"> All Rights Reserved Hassan Goubil</a> | <div id="currentDate"></div>
-        </footer>
-	<script src="scripts/windchill.js"></script>
-       <script src="scripts/currentDate.js"></script>
-	<script  src="scripts/hamburger.js"></script>
-</html> 
+      <footer>
+         Weather Or Not | 235 Culumbos Road | FRANKLIN, TN | 468 456 567<br>
+         Copyright &copy;2018 | <a href="#"> All Rights Reserved Hassan Goubil</a> | 
+         <div id="currentDate"></div>
+      </footer>
+        <script>
+            $(document).ready(function(){
+                var URL = $(location).attr('pathname');
+                if (URL == '/index.php'){
+                    $('.flexItem1 a').addClass('active');
+                }
+                if (URL == '/franklin.php'){
+                    $('.flexItem2 a').addClass('active');
+                }
+                if (URL == '/greenville.php'){
+                    $('.flexItem3 a').addClass('active');
+                }
+                if (URL == '/springfield.php'){
+                    $('.flexItem4 a').addClass('active');
+                }
+                if (URL == '/storm_center.php'){
+                    $('.flexItem5 a').addClass('active');
+                }
+                if (URL == '/gallery.php'){
+                    $('.flexItem6 a').addClass('active');
+                }
+            });
+        </script>
+    </body>
+</html>
