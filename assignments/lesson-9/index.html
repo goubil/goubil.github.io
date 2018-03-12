@@ -1,132 +1,132 @@
-
 <!DOCTYPE HTML>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <title>Goubil's Online weather</title>
-        <meta name="description" content="Goubil's weather site provides the most up to date and accurate weather forecasts, including breaking weather stories, as well as brief town descriptions.">
-        <meta name="viewport" content="width=device-width, inital-scale=1">
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" media="(max-width: 735px)" href="styles/main.css">
-        <link rel="stylesheet" media="(min-width: 736px)" href="styles/medium.css">
-        <link rel="stylesheet" media="(min-width: 1440px)" href="styles/large.css">
-    </head>
-    <body>
-        <header>
-            <h1>Weather or Not</h1>
-          <p id="subHeaderText">The place to find your local weather forecast</p> 
-			<img src="images/sunydaylogo.png" alt="A sunny day."><span style="font-family: Kaiti TC Regular;">&nbsp;</span>
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        </header>
-        <nav>
-            <ul class="navigation">
-                <li class="flexItem"><a class="active" href="#">HOME</a></li>
-                <li class="flexItem"><a href="https://goubil.github.io/assignments/franklin-7/franklin-7.html">FRANKLIN</a></li>
-                <li class="flexItem"><a href="#greenville">GREENVILLE</a></li>
-                <li class="flexItem"><a href="#springfield">SPRINGFIELD</a></li>
-                <li class="flexItem"><a href="https://goubil.github.io/assignments/lesson-8/stormcenter.html">STORM CENTER</a></li>
-                <li class="flexItem"><a href="https://goubil.github.io/assignments/franklin-7/gallery-7.html">GALLERY</a></li>
-            </ul>
-        </nav>
-        <main>
-            <article class="weatherStory">
-                <div class="containerImage">
-                    <picture>
-                        <source media="(max-width: 860px)" srcset="images/small/storm.jpg 1x">
-                        <source media="(max-width: 1439px)" srcset="images/medium/storm.jpg 1x">
-                        <source media="(min-width: 1440px)" srcset="images/large/storm.jpg 1x">
-                        <img src="images/storm.jpg" alt="Storm day">
-                    </picture>
-                </div>
-                <div class="containerMainStory">
-                    <h2>Weather Story</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet pretium urna, at varius est tempus ac. Quisque mattis consequat massa nec laoreet. Etiam turpis lacus, vehicula vel nibh in, sollicitudin bibendum neque. Duis eget maximus nunc. Vestibulum lacinia tortor vel lobortis molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed metus urna, faucibus vel orci vel, mattis tempus ipsum. In id dolor nec lorem pharetra ornare sollicitudin ac velit. Aliquam blandit libero vel metus consequat pellentesque. Vestibulum non ligula a nisl luctus accumsan. Quisque et consequat quam.</p>
-                    <p>Phasellus varius neque in tristique vehicula. Vivamus iaculis elit eget augue luctus tempus. Mauris id nibh quis orci interdum mattis egestas ac nisl. Duis lobortis libero ut ultrices mattis. Donec pellentesque scelerisque commodo. .</p>
-                </div>
-            </article>
-            <hr>
-            <article class="franklinStory">
-                <div class="franklinData">
-                    <table>
-                        <tr>
-                            <th colspan="2">Franklin Town</th>
-                        </tr>
-                        <tr>
-                            <td>Founded</td>
-                            <td>1843</td>
-                        </tr>
-                        <tr>
-                            <td>Population</td>
-                            <td>15,000</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="franklinImage">
-                    <picture>
-                        <source media="(max-width: 860px)" srcset="images/small/franklintown.jpg 1x">
-                        <source media="(max-width: 1439px)" srcset="images/medium/franklintown.jpg 1x">
-                        <source media="(min-width: 1440px)" srcset="images/large/franklintown.jpg 1x">
-                        <img src="images/franklinTownImage.jpeg" alt="Franklin town street">
-                    </picture>
-                </div>
-            </article>
-            <hr>
-            <article class="greenvilleStory">
-                <div class="greenvilleData">
-                    <table>
-                        <tr>
-                            <th colspan="2">Greenville Town</th>
-                        </tr>
-                        <tr>
-                            <td>Founded</td>
-                            <td>1905</td>
-                        </tr>
-                        <tr>
-                            <td>Population</td>
-                            <td>7,500</td>
-                        </tr>
-                    </table>
-                </div>                
-                <div class="greenvilleImage">
-                    <picture>
-                        <source media="(max-width: 860px)" srcset="images/small/Greenvilletown.jpg 1x">
-                        <source media="(max-width: 1439px)" srcset="images/medium/Greenvilletown.jpg 1x">
-                        <source media="(min-width: 1440px)" srcset="images/large/Greenvilletown.jpg 1x">
-                        <img src="Greenvilletown.jpg" alt="Greenville town street">
-                    </picture>
-                </div>
-            </article>
-            <hr>
-            <article class="springfieldStory">
-                <div class="springfieldData">
-                    <table>
-                        <tr>
-                            <th colspan="2">Springfiled Town</th>
-                        </tr>
-                        <tr>
-                            <td>Founded</td>
-                            <td>1835</td>
-                        </tr>
-                        <tr>
-                            <td>Population</td>
-                            <td>150,000</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="springfieldImage">
-                    <picture>
-                        <source media="(max-width: 860px)" srcset="images/small/springfiledtown.jpg 1x">
-                        <source media="(max-width: 1439px)" srcset="images/medium/springfiledtown.jpg 1x">
-                        <source media="(min-width: 1440px)" srcset="images/large/springfiledtown.jpg 1x">
-                        <img src="images/springfiledtown.jpg" alt="Springfield town">
-                    </picture>
-                </div>
-            </article>
-        </main>
-        <footer>
-            Weather Or Not | 235 Culumbos Road | FRANKLIN, TN | 468 456 567<br>
-            Copyright &copy;2018 | <a href="#"> All Rights Reserved Hassan Goubil</a> | <div id="currentDate"></div>
-        </footer>
-        <script  src="scripts/currentDate.js"></script>
-    </body>
+   <head>
+      <meta charset="utf-8">
+      <title>Goubil's Online weather</title>
+      <meta name="description" content="Goubil's weather site provides the most up to date and accurate weather forecasts, including breaking weather stories, as well as brief town descriptions.">
+      <meta name="viewport" content="width=device-width, inital-scale=1">
+      <link rel="stylesheet" href="styles/normalize.css">
+      <link rel="stylesheet" media="(max-width: 735px)" href="styles/main.css">
+      <link rel="stylesheet" media="(min-width: 736px)" href="styles/medium.css">
+      <link rel="stylesheet" media="(min-width: 1440px)" href="styles/large.css">
+   </head>
+   <body>
+      <header>
+         <h1>Weather or Not</h1>
+         <p id="subHeaderText">The place to find your local weather forecast</p>
+         <img src="images/sunydaylogo.png" alt="A sunny day."><span style="font-family: Kaiti TC Regular;">&nbsp;</span>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      </header>
+      <nav>
+         <ul class="navigation">
+            <li class="flexItem"><a class="active" href="#">HOME</a></li>
+            <li class="flexItem"><a href="https://goubil.github.io/assignments/franklin-7/franklin-7.html">FRANKLIN</a></li>
+            <li class="flexItem"><a href="#greenville">GREENVILLE</a></li>
+            <li class="flexItem"><a href="#springfield">SPRINGFIELD</a></li>
+            <li class="flexItem"><a href="https://goubil.github.io/assignments/lesson-8/stormcenter.html">STORM CENTER</a></li>
+            <li class="flexItem"><a href="https://goubil.github.io/assignments/franklin-7/gallery-7.html">GALLERY</a></li>
+         </ul>
+      </nav>
+      <main>
+         <article class="weatherStory">
+            <div class="containerImage">
+               <picture>
+                  <source media="(max-width: 860px)" srcset="images/small/storm.jpg 1x">
+                  <source media="(max-width: 1439px)" srcset="images/medium/storm.jpg 1x">
+                  <source media="(min-width: 1440px)" srcset="images/large/storm.jpg 1x">
+                  <img src="images/storm.jpg" alt="Storm day">
+               </picture>
+            </div>
+            <div class="containerMainStory">
+               <h2>Weather Story</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet pretium urna, at varius est tempus ac. Quisque mattis consequat massa nec laoreet. Etiam turpis lacus, vehicula vel nibh in, sollicitudin bibendum neque. Duis eget maximus nunc. Vestibulum lacinia tortor vel lobortis molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed metus urna, faucibus vel orci vel, mattis tempus ipsum. In id dolor nec lorem pharetra ornare sollicitudin ac velit. Aliquam blandit libero vel metus consequat pellentesque. Vestibulum non ligula a nisl luctus accumsan. Quisque et consequat quam.</p>
+               <p>Phasellus varius neque in tristique vehicula. Vivamus iaculis elit eget augue luctus tempus. Mauris id nibh quis orci interdum mattis egestas ac nisl. Duis lobortis libero ut ultrices mattis. Donec pellentesque scelerisque commodo. .</p>
+            </div>
+         </article>
+         <hr>
+         <article class="franklinStory">
+            <div class="franklinData">
+               <table>
+                  <tr>
+                     <th colspan="2">Franklin Town</th>
+                  </tr>
+                  <tr>
+                     <td>Founded</td>
+                     <td>1843</td>
+                  </tr>
+                  <tr>
+                     <td>Population</td>
+                     <td>15,000</td>
+                  </tr>
+               </table>
+            </div>
+            <div class="franklinImage">
+               <picture>
+                  <source media="(max-width: 860px)" srcset="images/small/franklintown.jpg 1x">
+                  <source media="(max-width: 1439px)" srcset="images/medium/franklintown.jpg 1x">
+                  <source media="(min-width: 1440px)" srcset="images/large/franklintown.jpg 1x">
+                  <img src="images/franklinTownImage.jpeg" alt="Franklin town street">
+               </picture>
+            </div>
+         </article>
+         <hr>
+         <article class="greenvilleStory">
+            <div class="greenvilleData">
+               <table>
+                  <tr>
+                     <th colspan="2">Greenville Town</th>
+                  </tr>
+                  <tr>
+                     <td>Founded</td>
+                     <td>1905</td>
+                  </tr>
+                  <tr>
+                     <td>Population</td>
+                     <td>7,500</td>
+                  </tr>
+               </table>
+            </div>
+            <div class="greenvilleImage">
+               <picture>
+                  <source media="(max-width: 860px)" srcset="images/small/Greenvilletown.jpg 1x">
+                  <source media="(max-width: 1439px)" srcset="images/medium/Greenvilletown.jpg 1x">
+                  <source media="(min-width: 1440px)" srcset="images/large/Greenvilletown.jpg 1x">
+                  <img src="Greenvilletown.jpg" alt="Greenville town street">
+               </picture>
+            </div>
+         </article>
+         <hr>
+         <article class="springfieldStory">
+            <div class="springfieldData">
+               <table>
+                  <tr>
+                     <th colspan="2">Springfiled Town</th>
+                  </tr>
+                  <tr>
+                     <td>Founded</td>
+                     <td>1835</td>
+                  </tr>
+                  <tr>
+                     <td>Population</td>
+                     <td>150,000</td>
+                  </tr>
+               </table>
+            </div>
+            <div class="springfieldImage">
+               <picture>
+                  <source media="(max-width: 860px)" srcset="images/small/springfiledtown.jpg 1x">
+                  <source media="(max-width: 1439px)" srcset="images/medium/springfiledtown.jpg 1x">
+                  <source media="(min-width: 1440px)" srcset="images/large/springfiledtown.jpg 1x">
+                  <img src="images/springfiledtown.jpg" alt="Springfield town">
+               </picture>
+            </div>
+         </article>
+      </main>
+      <footer>
+         Weather Or Not | 235 Culumbos Road | FRANKLIN, TN | 468 456 567<br>
+         Copyright &copy;2018 | <a href="#"> All Rights Reserved Hassan Goubil</a> | 
+         <div id="currentDate"></div>
+      </footer>
+      <script  src="scripts/currentDate.js"></script>
+   </body>
 </html>
