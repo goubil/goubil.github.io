@@ -1,90 +1,109 @@
 <!DOCTYPE html>
 <html>
-   <meta charset="utf-8">
-   <title>Goubil's Online weather</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link href="styles/normalize.css" rel="stylesheet" >
-   <link href="styles/main.css" rel="stylesheet" >
-   <link href="styles/medium.css" rel="stylesheet" >
-   <link href="styles/large.css" rel="stylesheet" >
-   <link href="https://fonts.googleapis.com/css?family=Merriweather%7CMerriweather+Sans" rel="stylesheet">
-   <img src="images/sunydaylogo.png" alt="A sunny day."><span style="font-family: Kaiti TC Regular;">Weather Or Not  ... The best weather is within you&nbsp;</span><div>
-   <style>
-      body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      }
-      .topnav {
-      overflow: hidden;
-      background-color: #333;
-      }
-      .topnav a {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 14px;
-      text-decoration: none;
-      font-size: 18px;
-      }
-      .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-      }
-      .topnav a.active {
-      background-color: #4CAF50;
-      color: white;
-      }
-   </style><div class="topnav">
-      <a href="https://goubil.github.io/assignments/lesson-9/index.html">Home</a>
-      <a href="https://goubil.github.io/assignments/franklin-7/franklin-7.html">Franklin</a>
-      <a href="#Greenville">Greenville</a>
-      <a href="#Springfield">Springfield</a>
-      <a class="active"  href= "https://goubil.github.io/assignments/lesson-8/stormcenter.html">Storm Center</a>
-      <a href="https://goubil.github.io/assignments/franklin-7/gallery-7.html">Gallery</a>
-   </div>
-	<main>
-    <form action="thanks.html" name="stormcenter" id="stormform">
-        <fieldset>
-        <legend>Storm Form</legend>
-            <h3>Personal Information</h3>
-            <label><span>Full Name:*</span><input name="fullname" type="text" placeholder="First Last" pattern="[a-zA-Z ]{5,99}" required></label>
-            <label><span>Email:</span><input name="email" type="email" placeholder="email@demo.com"></label>
-            <label><span>Phone:*</span><input name="phonenumber" type="tel" placeholder="2345556789" required></label>
-            <label><span>Zip:*</span><input name="zipcode" type="number" placeholder="84119" required></label>
-            <h3>Storm Information</h3>
-            <label><span>Storm Date:</span><input name="stormdate" type="date"></label>
-            <label><span>Storm Type:</span><input name="stormtype" type="text" list="stormtypes">
-            <datalist id="stormtypes">
-            <option value="Flash Flood"></option>
-            <option value="Hail"></option>
-            <option value="Hurricane"></option>
-            <option value="Thunderstorm"></option>
-            <option value="Tornado"></option>
-            </datalist></label>
-            <label><span>Storm Severity:</span><input name="stormseverity" type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span></label>
-            <label><span>Storm Region:</span><select name="stormregion">
-            <option value="selectregion..." disabled selected>Select Region ...</option>
-            <option value="franklin">Franklin</option>
-            <option value="greenville">Greenville</option>
-            <option value="springfield">Springfield</option></select></label>
-            <span id="label">User In-Danger:</span>
-            <label><input name="userindanger" type="radio" value="Yes">Yes</label>
-            <label><input name="userindanger" type="radio" value="Maybe">Maybe</label>
-            <label><input name="userindanger" type="radio" value="No">No</label>
-            <label><span>Additional Information or Comments:</span>
-            <textarea name="additionalinformationorcomments" rows="10" cols="30"></textarea></label>
-        </fieldset>
-        <input type="submit" value="Submit" class="submitbutton">
-        <input name="redirect" type="hidden" value="thanks.html">
-    </form>
-</main>
-   <footer>
-      Weather Or Not | 235 Culumbos Road | FRANKLIN, TN | 468 456 567<br>
-      Copyright &copy;2018 | <a href="#"> All Rights Reserved Hassan Goubil</a> | 
-      <div id="currentDate"></div>
-   </footer>
-   <script src="scripts/wayfinding.js" defer></script>
-   <script src="scripts/windchill.js" defer></script>
-   <script src="scripts/currentDate.js"></script>
-	<script  src="scripts/hamburger.js"></script></div>
+  <head>
+        <meta charset="utf-8">
+        <title>Storm Center</title>
+        <meta name="description" content="Franklin Town local weather page includes the latest accurate weather forcasts to help plan your day">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" media="(max-width: 735px)" href="styles/main.css">
+        <link rel="stylesheet" media="(min-width: 736px)" href="styles/medium.css">
+        <link rel="stylesheet" media="(min-width: 1440px)" href="styles/large.css">
+    </head>
+    <body>
+        <header>
+            <h1>Weather or Not</h1>
+           <p id="subHeaderText">The place to find your local weather forecast</p> 
+			<img src="images/sunydaylogo.png" alt="A sunny day."><span style="font-family: Kaiti TC Regular;">&nbsp;</span>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        </header>
+       <nav>
+            <ul class="navigation">
+                <li class="flexItem"><a href="https://goubil.github.io/assignments/lesson-9/index.html">HOME</a></li>
+                <li class="flexItem"><a  href="https://goubil.github.io/assignments/franklin-7/franklin-7.html">FRANKLIN</a></li>
+                <li class="flexItem"><a href="#greenville">GREENVILLE</a></li>
+                <li class="flexItem"><a href="#springfield">SPRINGFIELD</a></li>
+                <li class="flexItem"><a class="active" href="https://goubil.github.io/assignments/lesson-8/stormcenter.html">STORM CENTER</a></li>
+                <li class="flexItem"><a href="https://goubil.github.io/assignments/franklin-7/gallery-7.html">GALLERY</a></li>
+            </ul>
+        </nav>
+	  <main>
+            <form id="stormSubmission">
+                <fieldset>
+                    <legend>Personal Infomation</legend>
+                    <label><span>Full Name:</span><input name="fullName" type="text" placeholder="Full Name" pattern="[a-zA-Z -]{5,}" required></label>
+                    <label><span>Email:</span><input name="email" type="email" placeholder="example@email.com" autocomplete="off" required></label>
+                    <label><span>Telphone:</span><input name="telephone" type="tel" placeholder="(123)555-5555" required></label>
+                    <label><span>Zip:</span><input name="zip" type="number" placeholder="84096" pattern="[09]{5,5}"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label><span>Storm Date:</span><input name="stormDate" type="date"></label>
+                    <label><span>Storm Type:</span><input name="stormType" list="stormType">
+                        <datalist id="stormType">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>            
+                    </label>
+                    <label><span>Storm Severity (1 to 10):</span><input name="stormSeverity" type="range" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span></label>
+                    <label><span>Storm Region:</span>
+                        <select name="stormRegion">
+                            <option value="default" selected disabled hidden>Select Region ...</option>
+                            <option value="Franklin">Franklin</option>
+                            <option value="Greenville">Greenville</option>
+                            <option value="Springfield">Springfield</option>
+                        </select></label>
+                    <label><span>User In-Danger Level:</span>
+                        <input class="inputRadio" name="dangerLevel" type="radio" value="yes">Yes
+                        <input class="inputRadio" name="dangerLevel" type="radio" value="no">No
+                        <input class="inputRadio" name="dangerLevel" type="radio" value="maybe">Maybe   
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Comments</legend>
+                    <label><span>Additional Comments:</span>
+                        <textarea name="comments" rows="10" cols="28"></textarea>
+                    </label>
+                </fieldset> 
+                    <input type="submit" value="Submit" class="formButton" formaction="https://goubil.github.io/assignments/lesson-8/thanks.html">
+                    <input type="reset" value="Reset" class="formButton">
+            </form>
+        </main><script>
+            function adjustRating(rating) {
+    "use strict";
+    document.getElementById("ratingvalue").innerHTML = rating;
+}        </script>
+        <script>
+            $(document).ready(function(){
+                var URL = $(location).attr('pathname');
+                if (URL == '/index.html'){
+                    $('.flexItem1 a').addClass('active');
+                }
+                if (URL == '/franklin-7.html'){
+                    $('.flexItem2 a').addClass('active');
+                }
+                if (URL == '/greenville.html'){
+                    $('.flexItem3 a').addClass('active');
+                }
+                if (URL == '/springfield.html'){
+                    $('.flexItem4 a').addClass('active');
+                }
+                if (URL == '/stormcenter.html'){
+                    $('.flexItem5 a').addClass('active');
+                }
+                if (URL == '/gallery.html'){
+                    $('.flexItem6 a').addClass('active');
+                }
+            });
+        </script>
+	<footer>
+         Weather Or Not | 235 Culumbos Road | FRANKLIN, TN | 468 456 567<br>
+         Copyright &copy;2018 | <a href="#"> All Rights Reserved Hassan Goubil</a> | 
+         <div id="currentDate"></div>
+      </footer>
+		 <script  src="scripts/currentDate.js"></script>
+    </body>
 </html>

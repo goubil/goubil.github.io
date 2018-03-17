@@ -1,9 +1,10 @@
 
+
 <!DOCTYPE HTML>
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <title>Franklin Weather</title>
+        <title>Greanville Weather</title>
         <meta name="description" content="Franklin Town local weather page includes the latest accurate weather forcasts to help plan your day">
         <meta name="viewport" content="width=device-width, inital-scale=1">
         <link rel="stylesheet" href="styles/normalize.css">
@@ -21,8 +22,8 @@
        <nav>
             <ul class="navigation">
                 <li class="flexItem"><a href="https://goubil.github.io/assignments/lesson-9/index.html">HOME</a></li>
-                <li class="flexItem"><a class="active" href="https://goubil.github.io/assignments/franklin-7/franklin-7.html">FRANKLIN</a></li>
-                <li class="flexItem"><a href="https://goubil.github.io/assignments/weathersite/greenville.html">GREENVILLE</a></li>
+                <li class="flexItem"><a  href="https://goubil.github.io/assignments/franklin-7/franklin-7.html">FRANKLIN</a></li>
+                <li class="flexItem"><a class="active" href="https://goubil.github.io/assignments/weathersite/greenville.html">GREENVILLE</a></li>
                 <li class="flexItem"><a href="https://goubil.github.io/assignments/weathersite/springfield.html">SPRINGFIELD</a></li>
                 <li class="flexItem"><a href="https://goubil.github.io/assignments/lesson-8/stormcenter.html">STORM CENTER</a></li>
                 <li class="flexItem"><a href="https://goubil.github.io/assignments/franklin-7/gallery-7.html">GALLERY</a></li>
@@ -36,7 +37,7 @@
                     <source media="(min-width: 1440px)" srcset="images/franklin-large.jpg">
                     <img src="images/franklin-large.jpg" alt="Mountain Range">
                 </picture>
-                <div class="mainForecast">
+                 <div class="mainForecast">
                     <table>
                         <tr>
                             <th colspan="2">Greenville Weather</th>
@@ -87,30 +88,30 @@
                             <td>Day 10</td>
                         </tr>
                         <tr>
-                            <td>89&deg;F</td>
-                            <td>87&deg;F</td>
-                            <td>78&deg;F</td>
+                            <td>84&deg;F</td>
+                            <td>84&deg;F</td>
+                            <td>80&deg;F</td>
                             <td>75&deg;F</td>
                             <td>72&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>76&deg;F</td>
-                            <td>76&deg;F</td>
+                            <td>70&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>77&deg;F</td>
                             <td>85&deg;F</td>
-                            <td>89&deg;F</td>
                         </tr>
                     </table>
                 </div>
-            </div>
-        </main>
-        <footer>
-            Tri-Metro Weather | 300 West Avenue | Some Town, CA | 555-555-555<br>
-Copyright &copy; 2018 | <a href="#">Terms of Use</a> | Saturday, 17 March 2018        </footer>
-        <script>
+            </div></main>
+         <footer>
+            Weather Or Not | 235 Culumbos Road | FRANKLIN, TN | 468 456 567<br>
+            Copyright &copy;2018 | <a href="#"> All Rights Reserved Hassan Goubil</a> | <div id="currentDate"></div>
+        </footer>
+		 <script>
             var urlString = document.location.href;
 var urlArray = urlString.split('/');
 var pageHREF = urlArray[urlArray.length - 1];
 
-if (pageHREF === 'franklin-7.html') {
+if (pageHREF === 'franklin.php') {
     var windspeed = 5;
     var highTemp = 90;
     var lowTemp = 66;
@@ -118,7 +119,7 @@ if (pageHREF === 'franklin-7.html') {
     document.getElementById("windChill").innerHTML = calcWindChill + "&deg;F";
 }
 
-if (pageHREF === 'springfield.html') {
+if (pageHREF === 'springfield.php') {
     var windspeed = 15;
     var highTemp = 72;
     var lowTemp = 45;
@@ -147,22 +148,22 @@ function windChill(windspeed, highTemp, lowTemp) {
         <script>
             $(document).ready(function(){
                 var URL = $(location).attr('pathname');
-                if (URL == '/index.html'){
+                if (URL == '/index.php'){
                     $('.flexItem1 a').addClass('active');
                 }
-                if (URL == '/franklin-7.html'){
+                if (URL == '/franklin.php'){
                     $('.flexItem2 a').addClass('active');
                 }
-                if (URL == '/greenville.html'){
+                if (URL == '/greenville.php'){
                     $('.flexItem3 a').addClass('active');
                 }
-                if (URL == '/springfield.html'){
+                if (URL == '/springfield.php'){
                     $('.flexItem4 a').addClass('active');
                 }
-                if (URL == '/storm_center.html'){
+                if (URL == '/storm_center.php'){
                     $('.flexItem5 a').addClass('active');
                 }
-                if (URL == '/gallery.html'){
+                if (URL == '/gallery.php'){
                     $('.flexItem6 a').addClass('active');
                 }
             });
