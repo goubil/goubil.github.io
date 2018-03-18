@@ -1,21 +1,11 @@
-var weatherObj = new XMLHttpRequest();
+var h = parseFloat(document.getElementById("hightemp").innerHTML);
+var l = parseFloat(document.getElementById("lowtemp").innerHTML);
+var avgtemp = (l + h) / 2;
 
-weatherObj.open('GET', 'http://api.wunderground.com/api/c42874163b0f6ad9/conditions/forecast/q/MN/Franklin.json', true);
+var ws = parseFloat(document.getElementById("windspeed").innerHTML);
 
-weatherObj.send();
+var final = 35.74 + (0.6215 * avgtemp) - (35.75 * Math.pow(ws, 0.16)) + (0.4275 * avgtemp) * Math.pow(ws, 0.16);
 
-weatherObj.onload = function() {
-    
-    var weatherInfo = JSON.parse(weatherObj.responseText);
-    console.log(weatherInfo);
-    
-    document.getElementById('current').innerHTML = weatherInfo.current_observation.weather;
-    document.getElementById('c-temp').innerHTML = weatherInfo.current_observation.temp_f;
-    document.getElementById('speed').innerHTML = weatherInfo.current_observation.wind_mph;
-    document.getElementById('wind-chill').innerHTML = weatherInfo.current_observation.windchill_f;
-    document.getElementById('img-current').src = weatherInfo.current_observation.icon_url;
-    document.getElementById('c-forecast').innerHTML = weatherInfo.forecast.txt_forecast.forecastday["0"].fcttext;
-}
+final = final.toFixed(2);
 
-
-
+document.getElementById("windchill").innerHTML = final;
