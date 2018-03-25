@@ -279,3 +279,56 @@ body {
 }
 
 
+navigation ul.dropdownMenu {
+	position: absolute;
+	margin:auto;
+	list-style: none;
+	padding-left: 275px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	color: rgba(0,0,0,0.8);
+}
+
+navigation li {
+	width: 100px;
+	float: left;
+	text-align: center;
+    padding: 8px 0;
+	margin: auto;
+    background:rgba(0, 167, 255, 0.86);
+}
+
+navigation ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+navigation li a {
+    display: block;
+    padding: 0;
+}
+
+navigation li > ul {
+	position:relative;
+	width:190px;
+	clear:both;
+	/* Hide the Submenus */
+	display:none;
+}
+
+
+logoclose
+DEALSEARNINGS
+CURRENT EARNINGS
+$0.00
+Earnings that are paid out weekly based on your payment method.
+PENDING EARNINGS
+$0.00
+Pending earning are locked anywhere from 15 to 90 days depending on the retailer.
+ALL TIME EARNINGS
+$0.00
+This is everything you've ever earned from Giving Assistant.
+https://givingassistant.orghttps://givingassistant.org
+https://givingassistant.orghttps://givingassistant.org
+
+
