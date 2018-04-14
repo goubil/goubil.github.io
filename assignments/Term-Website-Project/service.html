@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Service - Mountain Spoke</title>
+    <meta name="author" content="Dan Ortega">
+    <meta name="description" content="The Mountain Spoke is the best specialized bike's store at bozeman montana">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+    <img src="images/compound.svg" alt="A nice abstract bike on gray and green." id="logo">
+    <h1>The Mountain Spoke</h1>
+    <div class="subheading"><i>Bike up the way!!</i></div>
+    <span>.</span>
+</header>
+
+    <nav>
+    <img src="images/menubutton.svg" alt="A menu button" onclick="showNavMenu()">
+    <!-- <button onclick="toggleNavMenu()">&#9776;</button> -->
+    <ul class="hidden" id="hideorshow">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adventures.html">Adventure Tours</a></li>
+        <li><a href="event.html">Main Event</a></li>
+        <li><a href="bikesales.html">Bikes (For sale)</a></li>
+        <li class="active"> <a href="service.html">Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <!--<h3 class="current">Current Weather</h3>-->
+        <div class="maininfo2">
+            <figure>
+                <picture>
+                    <!--<source media="(min-width: 64em)" srcset="images/springfield-large.jpg">-->
+                    <source media="(min-width: 37.5em)" srcset="images/newimages/bikerepair.jpeg">
+                    <img src="images/newimages/bikerepair.jpeg" alt="The view of a classical architecture city from a high building on a sunset">
+                </picture>
+            </figure>
+            <section class="info">
+                <h2>Best Repair Service</h2>
+                <div class="conditions">
+                    <p>Fully qualified technitians</p>
+                    <p>Professional tools</p>
+                    <p>All brands served</p>
+                    <p>... really, all world class brands</p>
+                    <p>Great stock of original parts</p>
+                    <p>Best bike repair store in the US in 2016</p>
+
+                </div>
+            </section>
+        </div>
+
+        <section class="forecast">
+            <h3>OUR SERVICES IN 2017</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>BRANDS</th>
+                        <th>SERVED</th>
+                        <th>AVERAGE TIME (hrs)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Calfee Design - USA.</td>
+                        <td>223</td>
+                        <td>1.5</td>
+                    </tr>
+                    <tr>
+                        <td>Caloi - Brazil.</td>
+                        <td>178</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Campion Cycle Company - UK.</td>
+                        <td>125</td>
+                        <td>1.3</td>
+                    </tr>
+                    <tr>
+                        <td>Cannondale - US</td>
+                        <td>60</td>
+                        <td>0.6</td>
+                    </tr>
+                    <tr>
+                        <td>Canyon bicycles - Germany.</td>
+                        <td>57</td>
+                        <td>2.5</td>
+                    </tr>
+                    <tr>
+                        <td>And More</td>
+                        <td>615</td>
+                        <td>2.7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+    <aside>
+        The Mountain Spoke<br>Bozeman, MT 59718<br>(999)999-9999<br>bike@mountainspoke.com
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The Mountain Spoke | by Hassan Goubil | <a href="resources.html">Outside resources</a> | <span id="currentdate">
+        Friday, April 13, 2018</span></p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+    window.jQuery || document.write('<script src="scripts/jquery-3.2.1.min.js"><\/script>');
+</script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/activemenu.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+@media only screen and (min-width: 64em)
+/*same as min-width:1024px*/
+
+    {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+            main div.maininfo2 {
+
+     margin: 0 20px 0 40px;
+    }
+    div.maininfo {
+        flex-flow: column;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    main div.maininfo figure {
+        width: 100%;
+    }
+    section.info {
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    section.info h2 {
+        width: 100%;
+    }
+
+    main.gallerycontainer {
+        width: 97vw;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1vw;
+    }
+
+    main.gallerycontainer figure:hover {
+        box-shadow: 10px 10px 10px #a2a0bb;
+    }
+    /*
+    article div.town-article img {
+        width: 40%;
+    }*/
+}
+logoclose
+DEALSEARNINGS
+CURRENT EARNINGS
+$0.63
+Earnings that are paid out weekly based on your payment method.
+PENDING EARNINGS
+$-0.63
+Pending earning are locked anywhere from 15 to 90 days depending on the retailer.
+ALL TIME EARNINGS
+$0.00
+This is everything you've ever earned from Giving Assistant.
+https://givingassistant.orghttps://givingassistant.org
+https://givingassistant.orghttps://givingassistant.org
+

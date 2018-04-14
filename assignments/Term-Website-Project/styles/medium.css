@@ -1,0 +1,113 @@
+@media only screen and (min-width: 37.5em)
+/*same as min-width:600px*/
+
+    {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    header span {
+        display: none;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav button, nav img {
+        display: none;
+    }
+    /* hamburger button does not need to be shown */
+    nav ul,
+    nav ul.hidden {
+        position: static;
+        width: 100%;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        padding: 0px 0px;
+    }
+
+    nav ul li a {
+        display: contents;
+        padding: 20px 20px;
+    }
+
+    div.maininfo2 {
+        display: inline-flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+
+    main div.maininfo2 figure {
+
+        width: 50%;
+    }
+        
+            div.maininfo {
+        flex-flow: column;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    main div.maininfo figure {
+        width: 100%;
+    }
+
+    div.current {
+        flex-flow: row-reverse
+    }
+
+    div.highlow {
+        flex-flow: column;
+    }
+ 
+
+    article div.town-article {
+        display: inline-flex;
+        flex-direction: row;
+    }
+        
+        
+    article div.town-article2 {
+        display: inline-flex;
+        flex-direction: row-reverse;
+    }
+
+    article div.town-article picture,
+         article div.town-article2 picture{
+        width: 50%;
+    }
+
+    article div.town-article section,
+        article div.town-article2 section
+        {
+        width: 50%;
+    }
+
+    main.gallerycontainer {
+        width: 96vw;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5vw;
+    }
+
+    form {
+        width: 80vw;
+    }
+    /* responsive images */
+}
+logoclose
+DEALSEARNINGS
+CURRENT EARNINGS
+$0.63
+Earnings that are paid out weekly based on your payment method.
+PENDING EARNINGS
+$-0.63
+Pending earning are locked anywhere from 15 to 90 days depending on the retailer.
+ALL TIME EARNINGS
+$0.00
+This is everything you've ever earned from Giving Assistant.
+https://givingassistant.orghttps://givingassistant.org
+https://givingassistant.orghttps://givingassistant.org
+
+

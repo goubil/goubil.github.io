@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Form - Mountain Spoke</title>
+    <meta name="author" content="Dan Ortega">
+    <meta name="description" content="The Mountain Spoke is the best specialized bike's store at bozeman montana">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+    <img src="images/compound.svg" alt="A nice abstract bike on gray and green." id="logo">
+    <h1>The Mountain Spoke</h1>
+    <div class="subheading"><i>Bike up the way!!</i></div>
+    <span>.</span>
+</header>
+
+     <nav>
+    <img src="images/menubutton.svg" alt="A menu button" onclick="showNavMenu()">
+    <!-- <button onclick="toggleNavMenu()">&#9776;</button> -->
+    <ul class="hidden" id="hideorshow">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="adventures.html">Adventure Tours</a></li>
+        <li><a href="event.html">Main Event</a></li>
+        <li><a href="bikesales.html">Bikes (For sale)</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <main id="mainform">
+        <article>
+        <h3>Let us serve you better</h3>
+        <p>By knowing this information we will try to get the best bike services available to you.
+            <br>By researching and giving you the best options and the best service with no pressure.
+            <br></p>
+            </article>
+        <br>
+
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Registration:</legend>
+            <label>*Name: <input type="text" pattern="[a-zA-Z ]{5,}" name="fullname" placeholder="Enter letters only" required></label>
+            <label>*E-mail: <input type="email" name="mail" placeholder="demo@mail.com" required></label>
+            <label>Phone number: <input type="tel" name="phone"></label>
+            <label>*Country / US State: <input type="text" name="country" required></label>
+            <label>Zip Code: <input type="number" name="zipcode"></label>
+            <label>Birth Date: <input type="date" name="stormdate"></label>   
+            <label>Interested in "Cycle the Continental Divide" <br>(Our main international yearly event): <br><input type="radio" name="yearevent" value="yes">Yes</label>
+            <label><input type="radio" name="userindanger" value="maybe">Maybe</label>
+            <label><input type="radio" name="userindanger" value="no">No</label>
+            
+            
+            <label>Comments/Accomodations: <br><textarea name="comments"></textarea></label>
+            <input type="submit">
+                </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+    <aside>
+        The Mountain Spoke<br>Bozeman, MT 59718<br>(999)999-9999<br>bike@mountainspoke.com
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | by Hassan Goubil | <a href="resources.html">Outside resources</a> | <span id="currentdate">
+        Friday, April 13, 2018</span></p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+    window.jQuery || document.write('<script src="scripts/jquery-3.2.1.min.js"><\/script>');
+</script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/activemenu.js"></script>
+
+
+</body>
+
+</html>

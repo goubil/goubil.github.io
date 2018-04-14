@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Main Event - Mountain Spoke</title>
+    <meta name="author" content="Dan Ortega">
+    <meta name="description" content="The Mountain Spoke is the best specialized bike's store at bozeman montana">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+    <img src="images/compound.svg" alt="A nice abstract bike on gray and green." id="logo">
+    <h1>The Mountain Spoke</h1>
+    <div class="subheading"><i>Bike up the way!!</i></div>
+    <span>.</span>
+</header>
+
+     <nav>
+    <img src="images/menubutton.svg" alt="A menu button" onclick="showNavMenu()">
+    <!-- <button onclick="toggleNavMenu()">&#9776;</button> -->
+    <ul class="hidden" id="hideorshow">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adventures.html">Adventure Tours</a></li>
+       <li class="active"><a href="event.html">Main Event</a></li>
+        <li><a href="bikesales.html">Bikes (For sale)</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <!--<h3 class="current">Current Weather</h3>-->
+        <div class="maininfo">
+            <figure>
+                <picture>
+                    <!--<source media="(min-width: 64em)" srcset="images/greenville-large.jpeg">-->
+                    <source media="(min-width: 37.5em)" srcset="images/newimages/cyclethecontinentaldivide.jpeg">
+                    <img src="images/newimages/cyclethecontinentaldivide.jpeg" alt="Reddish clouds in blue skies in a sunset with a mountain in the farground">
+                </picture>
+            </figure>
+            <section class="info">
+                <h2>Cycle the Continental Divide</h2>
+                <!-- <div class="current">
+                    <p>Sunny</p>
+                    <picture>
+                        <img src="images/sunny.png" alt="A simple sun image">
+                    </picture>
+                </div>-->
+                <div class="highlow">
+                    <p><b>Date:</b> December 16th, 2017</p>
+                    <p><b>Route:</b> 52 miles from Bozeman to Springdale near and on US route 90.</p>
+                </div>
+                <div class="conditions">
+                    <p><b>Cost:</b> &#36; 200.00</p>
+                    <p><b>Requirements:</b>Unquenchable spirit &amp; a full day dedication to the cause!</p>
+                </div>
+            </section>
+        </div>
+
+<h2 id="action"><a href="form.html">REGISTER TO LIVE IT!!</a></h2>
+
+        <article>
+            <h3>Great roads and real requirements</h3>
+            <div class="town-article2">
+                <section>
+                    <h3>...</h3>
+                    We will start at 6am from Bozeman's Mountain Spoke headquarters to the greatest adventure of the year. This event is attended by the best international amateur bikers and is a journey mainly siding US route 90. Through challeging roads and wonderful green areas and landscapes that will make you remember the experience all the year.
+                    <br>
+                    The journey requires a good supporting mountain bike or all terrain bike and a soul of iron to achieve the honor.
+                    <br> We are willing to provide you more information after your registration to our site or the event.
+                    <br> We are confident you are one of the powerfull bikers this year. Come join us!
+                </section>
+                <picture>
+                    <img src="images/newimages/challengeroads.jpeg" alt="Some little dandelions in the spring">
+                </picture>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+    <aside>
+        The Mountain Spoke<br>Bozeman, MT 59718<br>(999)999-9999<br>bike@mountainspoke.com
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | by Hassan Goubil | <a href="resources.php">Outside resources</a> | <span id="currentdate">
+        Friday, April 13, 2018</span></p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+    window.jQuery || document.write('<script src="scripts/jquery-3.2.1.min.js"><\/script>');
+</script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/activemenu.js"></script>
+
+
+
+</body>
+
+</html>
